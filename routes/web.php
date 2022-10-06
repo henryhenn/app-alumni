@@ -16,7 +16,3 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('frontend-template.main');
 });
-
-// test 
-
-//andrew test ngacak
