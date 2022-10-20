@@ -2860,6 +2860,11 @@
         {
             "name": "symfony/console",
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> origin
+=======
             "version": "v6.0.13",
             "source": {
                 "type": "git",
@@ -2876,6 +2881,7 @@
                 "php": ">=8.0.2",
 =======
 <<<<<<< HEAD
+>>>>>>> origin/main
             "version": "v6.1.5",
             "source": {
                 "type": "git",
@@ -2975,9 +2981,16 @@
 <<<<<<< HEAD
                 "source": "https://github.com/symfony/console/tree/v6.1.5"
 =======
+<<<<<<< HEAD
+                "source": "https://github.com/symfony/console/tree/v6.1.5"
+=======
                 "source": "https://github.com/symfony/console/tree/v6.0.13"
 >>>>>>> 8b96a0c0e93aab6c9e10633fbb756612b979fe14
+<<<<<<< HEAD
+>>>>>>> origin
+=======
 >>>>>>> a171336ad0b8600ce47cceb4649cdddbfaf131c8
+>>>>>>> origin/main
             },
             "funding": [
                 {
@@ -2994,9 +3007,15 @@
                 }
             ],
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> origin
+=======
             "time": "2022-09-03T14:23:25+00:00"
 =======
 <<<<<<< HEAD
+>>>>>>> origin/main
             "time": "2022-09-03T14:24:42+00:00"
 >>>>>>> a171336ad0b8600ce47cceb4649cdddbfaf131c8
         },
@@ -3767,9 +3786,16 @@
 <<<<<<< HEAD
                 "source": "https://github.com/symfony/http-foundation/tree/v6.1.5"
 =======
+<<<<<<< HEAD
+                "source": "https://github.com/symfony/http-foundation/tree/v6.1.5"
+=======
                 "source": "https://github.com/symfony/http-foundation/tree/v6.0.13"
 >>>>>>> 8b96a0c0e93aab6c9e10633fbb756612b979fe14
+<<<<<<< HEAD
+>>>>>>> origin
+=======
 >>>>>>> a171336ad0b8600ce47cceb4649cdddbfaf131c8
+>>>>>>> origin/main
             },
             "funding": [
                 {
@@ -3786,6 +3812,11 @@
                 }
             ],
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> origin
+=======
             "time": "2022-09-17T07:33:45+00:00"
         },
         {
@@ -3802,6 +3833,7 @@
                 "reference": "5939a039103580d8d86a4c80e245258ad50c91b2",
 =======
 <<<<<<< HEAD
+>>>>>>> origin/main
             "time": "2022-09-17T07:55:45+00:00"
         },
         {
@@ -3961,9 +3993,16 @@
 <<<<<<< HEAD
                 "source": "https://github.com/symfony/http-kernel/tree/v6.1.5"
 =======
+<<<<<<< HEAD
+                "source": "https://github.com/symfony/http-kernel/tree/v6.1.5"
+=======
                 "source": "https://github.com/symfony/http-kernel/tree/v6.0.13"
 >>>>>>> 8b96a0c0e93aab6c9e10633fbb756612b979fe14
+<<<<<<< HEAD
+>>>>>>> origin
+=======
 >>>>>>> a171336ad0b8600ce47cceb4649cdddbfaf131c8
+>>>>>>> origin/main
             },
             "funding": [
                 {
@@ -3980,6 +4019,11 @@
                 }
             ],
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> origin
+=======
             "time": "2022-09-30T08:03:37+00:00"
         },
         {
@@ -3996,6 +4040,7 @@
                 "reference": "6269c872ab4792e8facbf8af27a2fbee8429f217",
 =======
 <<<<<<< HEAD
+>>>>>>> origin/main
             "time": "2022-09-30T08:10:57+00:00"
         },
         {
@@ -4010,6 +4055,8 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/symfony/mailer/zipball/e1b32deb9efc48def0c76b876860ad36f2123e89",
                 "reference": "e1b32deb9efc48def0c76b876860ad36f2123e89",
+<<<<<<< HEAD
+=======
 =======
             "time": "2022-09-30T08:03:37+00:00"
         },
@@ -4026,7 +4073,11 @@
                 "url": "https://api.github.com/repos/symfony/mailer/zipball/6269c872ab4792e8facbf8af27a2fbee8429f217",
                 "reference": "6269c872ab4792e8facbf8af27a2fbee8429f217",
 >>>>>>> 8b96a0c0e93aab6c9e10633fbb756612b979fe14
+<<<<<<< HEAD
+>>>>>>> origin
+=======
 >>>>>>> a171336ad0b8600ce47cceb4649cdddbfaf131c8
+>>>>>>> origin/main
                 "shasum": ""
             },
             "require": {
@@ -4085,9 +4136,16 @@
 <<<<<<< HEAD
                 "source": "https://github.com/symfony/mailer/tree/v6.1.5"
 =======
+<<<<<<< HEAD
+                "source": "https://github.com/symfony/mailer/tree/v6.1.5"
+=======
                 "source": "https://github.com/symfony/mailer/tree/v6.0.13"
 >>>>>>> 8b96a0c0e93aab6c9e10633fbb756612b979fe14
+<<<<<<< HEAD
+>>>>>>> origin
+=======
 >>>>>>> a171336ad0b8600ce47cceb4649cdddbfaf131c8
+>>>>>>> origin/main
             },
             "funding": [
                 {
@@ -4104,6 +4162,11 @@
                 }
             ],
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> origin
+=======
             "time": "2022-08-29T06:49:22+00:00"
         },
         {
@@ -4124,6 +4187,7 @@
                 "php": ">=8.0.2",
 =======
 <<<<<<< HEAD
+>>>>>>> origin/main
             "time": "2022-08-29T06:58:39+00:00"
         },
         {
@@ -4216,9 +4280,16 @@
 <<<<<<< HEAD
                 "source": "https://github.com/symfony/mime/tree/v6.1.5"
 =======
+<<<<<<< HEAD
+                "source": "https://github.com/symfony/mime/tree/v6.1.5"
+=======
                 "source": "https://github.com/symfony/mime/tree/v6.0.13"
 >>>>>>> 8b96a0c0e93aab6c9e10633fbb756612b979fe14
+<<<<<<< HEAD
+>>>>>>> origin
+=======
 >>>>>>> a171336ad0b8600ce47cceb4649cdddbfaf131c8
+>>>>>>> origin/main
             },
             "funding": [
                 {
@@ -4240,9 +4311,16 @@
 <<<<<<< HEAD
             "time": "2022-09-02T08:05:20+00:00"
 =======
+<<<<<<< HEAD
+            "time": "2022-09-02T08:05:20+00:00"
+=======
             "time": "2022-09-02T08:05:03+00:00"
 >>>>>>> 8b96a0c0e93aab6c9e10633fbb756612b979fe14
+<<<<<<< HEAD
+>>>>>>> origin
+=======
 >>>>>>> a171336ad0b8600ce47cceb4649cdddbfaf131c8
+>>>>>>> origin/main
         },
         {
             "name": "symfony/polyfill-ctype",
@@ -5193,9 +5271,16 @@
 <<<<<<< HEAD
                 "source": "https://github.com/symfony/routing/tree/v6.1.5"
 =======
+<<<<<<< HEAD
+                "source": "https://github.com/symfony/routing/tree/v6.1.5"
+=======
                 "source": "https://github.com/symfony/routing/tree/v6.0.11"
 >>>>>>> 8b96a0c0e93aab6c9e10633fbb756612b979fe14
+<<<<<<< HEAD
+>>>>>>> origin
+=======
 >>>>>>> a171336ad0b8600ce47cceb4649cdddbfaf131c8
+>>>>>>> origin/main
             },
             "funding": [
                 {
@@ -5212,9 +5297,15 @@
                 }
             ],
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> origin
+=======
             "time": "2022-07-20T13:45:53+00:00"
 =======
 <<<<<<< HEAD
+>>>>>>> origin/main
             "time": "2022-09-09T09:26:14+00:00"
 >>>>>>> a171336ad0b8600ce47cceb4649cdddbfaf131c8
         },
@@ -5466,9 +5557,16 @@
 <<<<<<< HEAD
                 "source": "https://github.com/symfony/string/tree/v6.1.5"
 =======
+<<<<<<< HEAD
+                "source": "https://github.com/symfony/string/tree/v6.1.5"
+=======
                 "source": "https://github.com/symfony/string/tree/v6.0.13"
 >>>>>>> 8b96a0c0e93aab6c9e10633fbb756612b979fe14
+<<<<<<< HEAD
+>>>>>>> origin
+=======
 >>>>>>> a171336ad0b8600ce47cceb4649cdddbfaf131c8
+>>>>>>> origin/main
             },
             "funding": [
                 {
@@ -5485,9 +5583,15 @@
                 }
             ],
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> origin
+=======
             "time": "2022-09-02T08:05:03+00:00"
 =======
 <<<<<<< HEAD
+>>>>>>> origin/main
             "time": "2022-09-02T08:05:20+00:00"
 >>>>>>> a171336ad0b8600ce47cceb4649cdddbfaf131c8
         },
@@ -5863,9 +5967,16 @@
 <<<<<<< HEAD
                 "source": "https://github.com/symfony/uid/tree/v6.1.5"
 =======
+<<<<<<< HEAD
+                "source": "https://github.com/symfony/uid/tree/v6.1.5"
+=======
                 "source": "https://github.com/symfony/uid/tree/v6.0.13"
 >>>>>>> 8b96a0c0e93aab6c9e10633fbb756612b979fe14
+<<<<<<< HEAD
+>>>>>>> origin
+=======
 >>>>>>> a171336ad0b8600ce47cceb4649cdddbfaf131c8
+>>>>>>> origin/main
             },
             "funding": [
                 {
@@ -5882,6 +5993,11 @@
                 }
             ],
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> origin
+=======
             "time": "2022-09-09T09:33:56+00:00"
         },
         {
@@ -5902,6 +6018,7 @@
                 "php": ">=8.0.2",
 =======
 <<<<<<< HEAD
+>>>>>>> origin/main
             "time": "2022-09-09T09:34:27+00:00"
         },
         {
@@ -6001,9 +6118,16 @@
 <<<<<<< HEAD
                 "source": "https://github.com/symfony/var-dumper/tree/v6.1.5"
 =======
+<<<<<<< HEAD
+                "source": "https://github.com/symfony/var-dumper/tree/v6.1.5"
+=======
                 "source": "https://github.com/symfony/var-dumper/tree/v6.0.13"
 >>>>>>> 8b96a0c0e93aab6c9e10633fbb756612b979fe14
+<<<<<<< HEAD
+>>>>>>> origin
+=======
 >>>>>>> a171336ad0b8600ce47cceb4649cdddbfaf131c8
+>>>>>>> origin/main
             },
             "funding": [
                 {
@@ -6025,9 +6149,16 @@
 <<<<<<< HEAD
             "time": "2022-09-08T09:34:40+00:00"
 =======
+<<<<<<< HEAD
+            "time": "2022-09-08T09:34:40+00:00"
+=======
             "time": "2022-09-08T09:32:44+00:00"
 >>>>>>> 8b96a0c0e93aab6c9e10633fbb756612b979fe14
+<<<<<<< HEAD
+>>>>>>> origin
+=======
 >>>>>>> a171336ad0b8600ce47cceb4649cdddbfaf131c8
+>>>>>>> origin/main
         },
         {
             "name": "tijsverkoyen/css-to-inline-styles",
@@ -8759,5 +8890,9 @@
 =======
     "plugin-api-version": "2.2.0"
 >>>>>>> 8b96a0c0e93aab6c9e10633fbb756612b979fe14
+<<<<<<< HEAD
+>>>>>>> origin
+=======
 >>>>>>> a171336ad0b8600ce47cceb4649cdddbfaf131c8
+>>>>>>> origin/main
 }
