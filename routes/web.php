@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthController;
+use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\AlumniController;
 
 /*
 |--------------------------------------------------------------------------
@@ -20,3 +22,6 @@ Route::get('/', function () {
 
 Route::get('/login', [AuthController::class,'index']);
 Route::get('/register', [AuthController::class, 'register']);
+Route::get('/profile', [ProfileController::class, 'index'])->name('profile');
+
+Route::get('/alumni', [AlumniController::class, 'index'])->name('alumni');
