@@ -24,10 +24,10 @@
                     </div>
                     <div class="col-md-6 col-lg-3">
                         <h5 class="text-white mb-4">Popular Link</h5>
-                        <a class="btn btn-link" href="/">Home</a>
+                        <a class="btn btn-link" href="{{route('home')}}">Home</a>
                         <a class="btn btn-link" href="">Community</a>
                         <a class="btn btn-link" href="">Profile</a>
-                        <a class="btn btn-link" href="login">Login</a>
+                        <a class="btn btn-link" href="{{route('login')}}">Login</a>
                     </div>
                     <div class="col-md-6 col-lg-3">
                         <h5 class="text-white mb-4">Newsletter</h5>

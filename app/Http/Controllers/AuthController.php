@@ -4,18 +4,18 @@ namespace App\Http\Controllers;
 
 use App\Http\Requests\RegisterRequest;
 use App\Models\User;
+use Illuminate\Contracts\View\View;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 
 class AuthController extends Controller
 {
-
     public function index()
     {
-        return view('login');
+        return view('auth.login');
     }
 
-    public function authenticate(Request $request)
+    public function authenticate(Request $request): \Illuminate\Http\RedirectResponse
     {
         $credentials = $request->validate([
             'email' => 'required|email',
@@ -23,13 +23,13 @@ class AuthController extends Controller
         ]);
 
         if (Auth::attempt($credentials)) {
-            if(auth()->user()->hasRole('User')) {
+            if (auth()->user()->hasRole('User')) {
                 $request->session()->regenerate();
 
                 return redirect()->intended('/');
             }
 
-            if(auth()->user()->hasRole('Admin')) {
+            if (auth()->user()->hasRole('Admin')) {
                 $request->session()->regenerate();
 
                 return redirect()->intended('dashboard');
@@ -39,12 +39,12 @@ class AuthController extends Controller
         return back()->with('error', 'Email atau Password salah. Silakan coba lagi!');
     }
 
-    public function register()
+    public function register(): View
     {
-        return view('register');
+        return view('auth.register');
     }
 
-    public function store(RegisterRequest $request)
+    public function store(RegisterRequest $request): \Illuminate\Http\RedirectResponse
     {
         $user = User::create($request->validated());
 

@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use Illuminate\Contracts\View\View;
 use Illuminate\Http\Request;
 
 class AlumniController extends Controller
@@ -11,9 +12,9 @@ class AlumniController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index(): View
     {
-        return view('frontend-template.alumni');
+        return view('alumni.alumni');
     }
 
     /**
