@@ -1,4 +1,4 @@
-@extends('Frontend-template.main')
+@extends('layouts.main')
 
 @section('content')
     <!-- Team Start -->
@@ -13,14 +13,15 @@
                     <div class="team-item">
                         <h5>Full Name</h5>
                         <p class="mb-4">Designation</p>
-                        <img class="img-fluid rounded-circle w-100 mb-4" src="{{ asset('img/team-1.jpg') }}" alt="">
+                        <img class="img-fluid rounded-circle w-100 mb-4" src="{{ asset('img/team-1.jpg') }}"
+                             alt="">
                         <div class="d-flex justify-content-center">
                             <a class="btn btn-square text-primary bg-white m-1" href=""><i
-                                    class="fab fa-facebook-f"></i></a>
+                                        class="fab fa-facebook-f"></i></a>
                             <a class="btn btn-square text-primary bg-white m-1" href=""><i
-                                    class="fab fa-twitter"></i></a>
+                                        class="fab fa-twitter"></i></a>
                             <a class="btn btn-square text-primary bg-white m-1" href=""><i
-                                    class="fab fa-linkedin-in"></i></a>
+                                        class="fab fa-linkedin-in"></i></a>
                         </div>
                     </div>
                 </div>
@@ -28,14 +29,15 @@
                     <div class="team-item">
                         <h5>Full Name</h5>
                         <p class="mb-4">Designation</p>
-                        <img class="img-fluid rounded-circle w-100 mb-4" src="{{ asset('img/team-2.jpg') }}" alt="">
+                        <img class="img-fluid rounded-circle w-100 mb-4" src="{{ asset('img/team-2.jpg') }}"
+                             alt="">
                         <div class="d-flex justify-content-center">
                             <a class="btn btn-square text-primary bg-white m-1" href=""><i
-                                    class="fab fa-facebook-f"></i></a>
+                                        class="fab fa-facebook-f"></i></a>
                             <a class="btn btn-square text-primary bg-white m-1" href=""><i
-                                    class="fab fa-twitter"></i></a>
+                                        class="fab fa-twitter"></i></a>
                             <a class="btn btn-square text-primary bg-white m-1" href=""><i
-                                    class="fab fa-linkedin-in"></i></a>
+                                        class="fab fa-linkedin-in"></i></a>
                         </div>
                     </div>
                 </div>
@@ -43,14 +45,15 @@
                     <div class="team-item">
                         <h5>Full Name</h5>
                         <p class="mb-4">Designation</p>
-                        <img class="img-fluid rounded-circle w-100 mb-4" src="{{ asset('img/team-3.jpg') }}" alt="">
+                        <img class="img-fluid rounded-circle w-100 mb-4" src="{{ asset('img/team-3.jpg') }}"
+                             alt="">
                         <div class="d-flex justify-content-center">
                             <a class="btn btn-square text-primary bg-white m-1" href=""><i
-                                    class="fab fa-facebook-f"></i></a>
+                                        class="fab fa-facebook-f"></i></a>
                             <a class="btn btn-square text-primary bg-white m-1" href=""><i
-                                    class="fab fa-twitter"></i></a>
+                                        class="fab fa-twitter"></i></a>
                             <a class="btn btn-square text-primary bg-white m-1" href=""><i
-                                    class="fab fa-linkedin-in"></i></a>
+                                        class="fab fa-linkedin-in"></i></a>
                         </div>
                     </div>
                 </div>
@@ -58,14 +61,15 @@
                     <div class="team-item">
                         <h5>Full Name</h5>
                         <p class="mb-4">Designation</p>
-                        <img class="img-fluid rounded-circle w-100 mb-4" src="{{ asset('img/team-4.jpg') }}" alt="">
+                        <img class="img-fluid rounded-circle w-100 mb-4" src="{{ asset('img/team-4.jpg') }}"
+                             alt="">
                         <div class="d-flex justify-content-center">
                             <a class="btn btn-square text-primary bg-white m-1" href=""><i
-                                    class="fab fa-facebook-f"></i></a>
+                                        class="fab fa-facebook-f"></i></a>
                             <a class="btn btn-square text-primary bg-white m-1" href=""><i
-                                    class="fab fa-twitter"></i></a>
+                                        class="fab fa-twitter"></i></a>
                             <a class="btn btn-square text-primary bg-white m-1" href=""><i
-                                    class="fab fa-linkedin-in"></i></a>
+                                        class="fab fa-linkedin-in"></i></a>
                         </div>
                     </div>
                 </div>

@@ -25,11 +25,16 @@
                     </div>
                     <div class="col-md-6 col-lg-3">
                         <h5 class="text-white mb-4">Popular Link</h5>
-                        <a class="btn btn-link" href="/">Home</a>
+                        <a class="btn btn-link" href="{{route('home')}}">Home</a>
                         <a class="btn btn-link" href="">Community</a>
+<<<<<<< HEAD:resources/views/frontend-template/layouts/footer.blade.php
                         <a class="btn btn-link" href="{{route('profile')}}">Profile</a>
                         <a class="btn btn-link" href="{{route('alumni')}}">Alumni</a>
                         <a class="btn btn-link" href="login">Login</a>
+=======
+                        <a class="btn btn-link" href="">Profile</a>
+                        <a class="btn btn-link" href="{{route('login')}}">Login</a>
+>>>>>>> origin/main:resources/views/layouts/sections/footer.blade.php
                     </div>
                     <div class="col-md-6 col-lg-3">
                         <h5 class="text-white mb-4">Newsletter</h5>

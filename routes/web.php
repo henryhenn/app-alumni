@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\LoginController;
+use App\Http\Controllers\AuthController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\AlumniController;
 
@@ -16,13 +16,18 @@ use App\Http\Controllers\AlumniController;
 |
 */
 
-Route::get('/', function () {
-    return view('home.index');
+Route::view('/', 'home.index')->name('home');
+
+Route::group([
+    'prefix' => 'auth',
+    'controller' => AuthController::class,
+    'middleware' => 'guest',
+], function () {
+    Route::get('/login', 'index')->name('login');
+    Route::get('/register', 'register')->name('register');
 });
 
-Route::get('/login', [LoginController::class,'index']);
-Route::get('/register', [LoginController::class, 'register']);
-
-Route::get('/profile', [ProfileController::class, 'index'])->name('profile');
-
-Route::get('/alumni', [AlumniController::class, 'index'])->name('alumni');
+Route::middleware('auth')->group(function () {
+    Route::get('/profile', [ProfileController::class, 'index'])->name('profile');
+    Route::get('/alumni', [AlumniController::class, 'index'])->name('alumni');
+});
