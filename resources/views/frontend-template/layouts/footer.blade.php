@@ -19,14 +19,16 @@
                         <h5 class="text-white mb-4">Quick Link</h5>
                         <a class="btn btn-link" href="/">Home</a>
                         <a class="btn btn-link" href="">Community</a>
-                        <a class="btn btn-link" href="">Profile</a>
+                        <a class="btn btn-link" href="{{route('profile')}}">Profile</a>
+                        <a class="btn btn-link" href="{{route('alumni')}}">Alumni</a>
                         <a class="btn btn-link" href="login">Login</a>
                     </div>
                     <div class="col-md-6 col-lg-3">
                         <h5 class="text-white mb-4">Popular Link</h5>
                         <a class="btn btn-link" href="/">Home</a>
                         <a class="btn btn-link" href="">Community</a>
-                        <a class="btn btn-link" href="">Profile</a>
+                        <a class="btn btn-link" href="{{route('profile')}}">Profile</a>
+                        <a class="btn btn-link" href="{{route('alumni')}}">Alumni</a>
                         <a class="btn btn-link" href="login">Login</a>
                     </div>
                     <div class="col-md-6 col-lg-3">
@@ -60,4 +62,6 @@
                 </div>
             </div>
         </div>
+
+        
         <!-- Footer End -->
