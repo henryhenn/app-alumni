@@ -3,6 +3,7 @@
 namespace Database\Seeders;
 
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
+use App\Models\User;
 use Illuminate\Database\Seeder;
 
 class DatabaseSeeder extends Seeder
@@ -14,11 +15,21 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        // \App\Models\User::factory(10)->create();
+        $this->call(RoleSeeder::class);
 
-        // \App\Models\User::factory()->create([
-        //     'name' => 'Test User',
-        //     'email' => 'test@example.com',
-        // ]);
+        $admin = User::create([
+            'name' => 'Super Admin',
+            'email' => 'admin@localhost.com',
+            'password' => bcrypt('password'),
+            'alamat' => 'DKI Jakarta',
+            'jenis_kelamin' => 'Laki-laki',
+            'tanggal_lahir' => date('2005-01-20'),
+            'tahun_lulus' => '2023',
+            'pekerjaan' => 'Web Programmer',
+            'hobby' => 'Mendengar musik',
+            'no_telp' => '081586043931',
+        ]);
+
+        $admin->assignRole('Super Admin');
     }
 }

@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\LoginController;
+use App\Http\Controllers\AuthController;
 
 /*
 |--------------------------------------------------------------------------
@@ -16,7 +16,7 @@ use App\Http\Controllers\LoginController;
 
 Route::get('/', function () {
     return view('frontend-template.main');
-});
+})->name('home');
 
-Route::get('/login', [LoginController::class,'index']);
-Route::get('/register', [LoginController::class, 'register']);
+Route::get('/login', [AuthController::class,'index']);
+Route::get('/register', [AuthController::class, 'register']);
