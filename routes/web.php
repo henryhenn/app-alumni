@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthController;
+use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\AlumniController;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,9 +16,18 @@ use App\Http\Controllers\AuthController;
 |
 */
 
-Route::get('/', function () {
-    return view('frontend-template.main');
-})->name('home');
+Route::view('/', 'home.index')->name('home');
 
-Route::get('/login', [AuthController::class,'index']);
-Route::get('/register', [AuthController::class, 'register']);
+Route::group([
+    'prefix' => 'auth',
+    'controller' => AuthController::class,
+    'middleware' => 'guest',
+], function () {
+    Route::get('/login', 'index')->name('login');
+    Route::get('/register', 'register')->name('register');
+});
+
+Route::middleware('auth')->group(function () {
+    Route::get('/profile', [ProfileController::class, 'index'])->name('profile');
+    Route::get('/alumni', [AlumniController::class, 'index'])->name('alumni');
+});
