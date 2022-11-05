@@ -27,6 +27,7 @@ return new class extends Migration
             $table->string('pekerjaan');
             $table->string('hobby');
             $table->string('no_telp');
+            $table->rememberToken();
             $table->timestamps();
         });
     }

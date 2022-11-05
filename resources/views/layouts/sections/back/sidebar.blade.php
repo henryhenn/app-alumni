@@ -1,13 +1,10 @@
 @php use Laravolt\Avatar\Facade as Avatar; @endphp
 <aside class="main-sidebar sidebar-dark-primary elevation-4">
-    <!-- Brand Logo -->
     <a href="{{route('dashboard')}}" class="brand-link text-center">
         <span class="brand-text font-weight-bold">App-Alumni</span>
     </a>
 
-    <!-- Sidebar -->
     <div class="sidebar">
-        <!-- Sidebar user panel (optional) -->
         <div class="user-panel mt-3 pb-3 mb-3 d-flex">
             <div class="image">
                 <img
@@ -19,12 +16,9 @@
             </div>
         </div>
 
-        <!-- Sidebar Menu -->
         <nav class="mt-2">
             <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu"
                 data-accordion="false">
-                <!-- Add icons to the links using the .nav-icon class
-                     with font-awesome or any other icon font library -->
                 <li class="nav-item">
                     <a href="#" class="nav-link {{request()->routeIs('dashboard') ? 'active' : ''}}">
                         <i class="nav-icon fas fa-tachometer-alt"></i>
@@ -89,9 +83,43 @@
                     <a href="" class="nav-link">List Data Alumni</a>
                 </li>
                 @endrole
+                <li class="nav-item">
+                    <a type="button" class="nav-link" data-toggle="modal"
+                       data-target="#logoutModal">
+                        <i class="nav-icon fas fa-power-off"></i>
+                        <p>
+                            Logout
+                        </p>
+                    </a>
+                </li>
             </ul>
         </nav>
-        <!-- /.sidebar-menu -->
     </div>
-    <!-- /.sidebar -->
 </aside>
+
+<div class="modal fade" id="logoutModal" tabindex="-1"
+     aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Konfirmasi</h5>
+                <button type="button" class="close" data-dismiss="modal"
+                        aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                Apakah Anda Yakin Ingin Logout?
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">
+                    Batal
+                </button>
+                <form action="{{route('logout')}}" method="post">
+                    @csrf
+                    <button type="submit" class="btn btn-danger">Yakin</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

@@ -41,12 +41,14 @@
                         <div class="invalid-feedback">{{$message}}</div>
                         @enderror
                     </div>
+                    <div class="input-group mb-3">
+                        <input type="checkbox" class="form-check mr-2" name="remember_me">
+                        Remember me
+                    </div>
                     <div class="row">
-                        <!-- /.col -->
                         <div class="col-4">
                             <button type="submit" class="btn btn-primary btn-block mt-2">Login</button>
                         </div>
-                        <!-- /.col -->
                     </div>
                 </form>
 
@@ -56,6 +58,5 @@
                     </a>
                 </div>
             </div>
-            <!-- /.login-card-body -->
         </div>
 @endsection

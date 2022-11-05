@@ -35,13 +35,11 @@
                             <td>{{$admin->created_at->diffForHumans()}}</td>
                             <td>{{$admin->updated_at->diffForHumans()}}</td>
                             <td>
-                                <!-- Button trigger modal -->
                                 <button type="button" class="btn btn-danger" data-toggle="modal"
                                         data-target="#deleteModal{{$admin->id}}">
                                     <i class="fas fa-trash"></i>
                                 </button>
 
-                                <!-- Modal -->
                                 <div class="modal fade" id="deleteModal{{$admin->id}}" tabindex="-1"
                                      aria-labelledby="exampleModalLabel" aria-hidden="true">
                                     <div class="modal-dialog">
@@ -64,7 +62,7 @@
                                                 <form action="{{route('admins.destroy', $admin->id)}}" method="post">
                                                     @csrf
                                                     @method('delete')
-                                                    <button type="button" class="btn btn-danger">Yakin</button>
+                                                    <button type="submit" class="btn btn-danger">Yakin</button>
                                                 </form>
                                             </div>
                                         </div>

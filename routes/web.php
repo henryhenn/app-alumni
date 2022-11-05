@@ -43,6 +43,8 @@ Route::middleware('auth')->group(function () {
 
     Route::get('dashboard', DashboardController::class)->name('dashboard');
 
+    Route::post('logout', [AuthController::class, 'logout'])->name('logout');
+
     Route::resource('my-profile', MyProfileController::class)->only('index', 'edit', 'update');
 });
 
