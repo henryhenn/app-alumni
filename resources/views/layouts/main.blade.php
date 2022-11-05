@@ -37,14 +37,14 @@
     </div>
 
     <div class="container-xxl position-relative p-0">
-        @include('layouts.sections.navbar')
+        @include('layouts.sections.front.navbar')
 
-        @include('layouts.sections.hero')
+        @include('layouts.sections.front.hero')
     </div>
 
     @yield('content')
 
-    @include('layouts.sections.footer')
+    @include('layouts.sections.front.footer')
 
     <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
 </div>

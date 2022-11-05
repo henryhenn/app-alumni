@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Http\Requests\RegisterRequest;
+use App\Http\Requests\AccountRequest;
 use App\Models\User;
 use Illuminate\Contracts\View\View;
 use Illuminate\Http\Request;
@@ -29,14 +29,14 @@ class AuthController extends Controller
                 return redirect()->intended('/');
             }
 
-            if (auth()->user()->hasRole('Admin')) {
+            if (auth()->user()->hasRole(['Admin', 'Super Admin'])) {
                 $request->session()->regenerate();
 
                 return redirect()->intended('dashboard');
             }
         }
 
-        return back()->with('error', 'Email atau Password salah. Silakan coba lagi!');
+        return back(400)->with('error', 'Email atau Password salah. Silakan coba lagi!');
     }
 
     public function register(): View
@@ -44,12 +44,16 @@ class AuthController extends Controller
         return view('auth.register');
     }
 
-    public function store(RegisterRequest $request): \Illuminate\Http\RedirectResponse
+    public function store(AccountRequest $request): \Illuminate\Http\RedirectResponse
     {
-        $user = User::create($request->validated());
+        $data = $request->validated();
+
+        if ($request->file('foto')) $data['foto'] = $request->file('foto')->store('user-image');
+
+        $user = User::create($data);
 
         $user->assignRole('User');
 
-        return redirect()->route('dashboard.index');
+        return redirect()->route('login')->with('message', 'Registrasi Berhasil!');
     }
 }

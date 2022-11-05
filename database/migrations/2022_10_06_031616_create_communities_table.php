@@ -14,7 +14,7 @@ return new class extends Migration
     public function up()
     {
         Schema::create('communities', function (Blueprint $table) {
-            $table->id();
+            $table->uuid('id');
             $table->foreignId('user_id');
             $table->longText('pesan');
             $table->timestamps();
