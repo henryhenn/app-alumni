@@ -1,12 +1,40 @@
 @extends('layouts.main')
 
+@section('hero')
+    <div class="container-xxl bg-primary hero-header">
+        <div class="container">
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-6 text-center text-lg-start">
+                    @if (session('message'))
+                        <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                            {{ session('error') }}
+                            <button type="button" class="btn-close" data-dismiss="alert" aria-label="Close">
+
+                            </button>
+                        </div>
+                    @endif
+                    <h1 class="text-white mb-4 animated zoomIn">Selamat datang di aplikasi Alumni</h1>
+                    <p class="text-white pb-3 animated zoomIn">Tempor rebum no at dolore lorem clita rebum rebum ipsum rebum
+                        stet dolor sed justo kasd. Ut dolor sed magna dolor sea diam. Sit diam sit justo amet ipsum vero
+                        ipsum clita lorem</p>
+                    <a href="#komunitas"
+                        class="btn btn-outline-light rounded-pill border-2 py-3 px-5 animated slideInRight">Learn More</a>
+                </div>
+                <div class="col-lg-6 text-center text-lg-start">
+                    <img class="img-fluid animated zoomIn" src="{{ asset('img/hero.png') }}" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+@endsection
+
 @section('content')
     <!-- About Start -->
     <div class="container-xxl py-6" id="komunitas">
         <div class="container">
             <div class="row g-5 align-items-center">
                 <div class="col-lg-6 wow zoomIn" data-wow-delay="0.1s">
-                    <img class="img-fluid" src="{{asset('img/komunity.png')}}">
+                    <img class="img-fluid" src="{{ asset('img/komunity.png') }}">
                 </div>
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
                     <div class="d-inline-block border rounded-pill text-primary px-4 mb-3">Community</div>
@@ -20,7 +48,8 @@
                             </div>
                             <div class="ms-4">
                                 <h6>Business Planning</h6>
-                                <span>Tempor erat elitr rebum at clita. Diam dolor ipsum amet eos erat ipsum lorem et sit sed stet lorem sit clita duo</span>
+                                <span>Tempor erat elitr rebum at clita. Diam dolor ipsum amet eos erat ipsum lorem et sit
+                                    sed stet lorem sit clita duo</span>
                             </div>
                         </div>
                         <div class="col-12 d-flex">
@@ -29,7 +58,8 @@
                             </div>
                             <div class="ms-4">
                                 <h6>Financial Analaysis</h6>
-                                <span>Tempor erat elitr rebum at clita. Diam dolor ipsum amet eos erat ipsum lorem et sit sed stet lorem sit clita duo</span>
+                                <span>Tempor erat elitr rebum at clita. Diam dolor ipsum amet eos erat ipsum lorem et sit
+                                    sed stet lorem sit clita duo</span>
                             </div>
                         </div>
                     </div>
@@ -45,11 +75,12 @@
                     <h3 class="text-white">Ready to get started</h3>
                     <p class="text-white">Please Register here !</p>
                     <div class="position-relative w-100 mt-3">
-                        <a href="{{route('register')}}" class="btn btn-outline-light rounded-pill border-2 py-3 px-5 animated slideInRight">Register</a>
+                        <a href="{{ route('register') }}"
+                            class="btn btn-outline-light rounded-pill border-2 py-3 px-5 animated slideInRight">Register</a>
                     </div>
                 </div>
                 <div class="col-md-6 text-center mb-n5 d-none d-md-block">
-                    <img class="img-fluid mt-5" style="max-height: 250px;" src="{{asset('img/newsletter.png')}}">
+                    <img class="img-fluid mt-5" style="max-height: 250px;" src="{{ asset('img/newsletter.png') }}">
                 </div>
             </div>
         </div>
@@ -135,14 +166,14 @@
     <div class="container-xxl bg-primary my-6 py-5 wow fadeInUp" data-wow-delay="0.1s">
         <div class="container">
             <div class="owl-carousel client-carousel">
-                <a href="#"><img class="img-fluid" src="{{asset('img/logo-1.png')}}" alt=""></a>
-                <a href="#"><img class="img-fluid" src="{{asset('img/logo-2.png')}}" alt=""></a>
-                <a href="#"><img class="img-fluid" src="{{asset('img/logo-3.png')}}" alt=""></a>
-                <a href="#"><img class="img-fluid" src="{{asset('img/logo-4.png')}}" alt=""></a>
-                <a href="#"><img class="img-fluid" src="{{asset('img/logo-5.png')}}" alt=""></a>
-                <a href="#"><img class="img-fluid" src="{{asset('img/logo-6.png')}}" alt=""></a>
-                <a href="#"><img class="img-fluid" src="{{asset('img/logo-7.png')}}" alt=""></a>
-                <a href="#"><img class="img-fluid" src="{{asset('img/logo-8.png')}}" alt=""></a>
+                <a href="#"><img class="img-fluid" src="{{ asset('img/logo-1.png') }}" alt=""></a>
+                <a href="#"><img class="img-fluid" src="{{ asset('img/logo-2.png') }}" alt=""></a>
+                <a href="#"><img class="img-fluid" src="{{ asset('img/logo-3.png') }}" alt=""></a>
+                <a href="#"><img class="img-fluid" src="{{ asset('img/logo-4.png') }}" alt=""></a>
+                <a href="#"><img class="img-fluid" src="{{ asset('img/logo-5.png') }}" alt=""></a>
+                <a href="#"><img class="img-fluid" src="{{ asset('img/logo-6.png') }}" alt=""></a>
+                <a href="#"><img class="img-fluid" src="{{ asset('img/logo-7.png') }}" alt=""></a>
+                <a href="#"><img class="img-fluid" src="{{ asset('img/logo-8.png') }}" alt=""></a>
             </div>
         </div>
     </div>
@@ -162,7 +193,7 @@
                     <p>Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore
                         diam</p>
                     <div class="d-flex align-items-center">
-                        <img class="img-fluid flex-shrink-0 rounded-circle" src="{{asset('img/testimonial-1.jpg')}}">
+                        <img class="img-fluid flex-shrink-0 rounded-circle" src="{{ asset('img/testimonial-1.jpg') }}">
                         <div class="ps-3">
                             <h6 class="mb-1">Client Name</h6>
                             <small>Profession</small>
@@ -174,7 +205,7 @@
                     <p>Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore
                         diam</p>
                     <div class="d-flex align-items-center">
-                        <img class="img-fluid flex-shrink-0 rounded-circle" src="{{asset('img/testimonial-2.jpg')}}">
+                        <img class="img-fluid flex-shrink-0 rounded-circle" src="{{ asset('img/testimonial-2.jpg') }}">
                         <div class="ps-3">
                             <h6 class="mb-1">Client Name</h6>
                             <small>Profession</small>
@@ -186,7 +217,7 @@
                     <p>Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore
                         diam</p>
                     <div class="d-flex align-items-center">
-                        <img class="img-fluid flex-shrink-0 rounded-circle" src="{{asset('img/testimonial-3.jpg')}}">
+                        <img class="img-fluid flex-shrink-0 rounded-circle" src="{{ asset('img/testimonial-3.jpg') }}">
                         <div class="ps-3">
                             <h6 class="mb-1">Client Name</h6>
                             <small>Profession</small>
@@ -198,7 +229,7 @@
                     <p>Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore
                         diam</p>
                     <div class="d-flex align-items-center">
-                        <img class="img-fluid flex-shrink-0 rounded-circle" src="{{asset('img/testimonial-4.jpg')}}">
+                        <img class="img-fluid flex-shrink-0 rounded-circle" src="{{ asset('img/testimonial-4.jpg') }}">
                         <div class="ps-3">
                             <h6 class="mb-1">Client Name</h6>
                             <small>Profession</small>
