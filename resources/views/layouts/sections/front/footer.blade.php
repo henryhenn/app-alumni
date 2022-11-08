@@ -19,20 +19,19 @@
                         <h5 class="text-white mb-4">Quick Link</h5>
                         <a class="btn btn-link" href="/">Home</a>
                         <a class="btn btn-link" href="">Community</a>
-                        <a class="btn btn-link" href="">Profile</a>
+                        <a class="btn btn-link" href="{{route('profile')}}">Profile</a>
+                        <a class="btn btn-link" href="{{route('alumni')}}">Alumni</a>
                         <a class="btn btn-link" href="login">Login</a>
                     </div>
                     <div class="col-md-6 col-lg-3">
                         <h5 class="text-white mb-4">Popular Link</h5>
                         <a class="btn btn-link" href="{{route('home')}}">Home</a>
                         <a class="btn btn-link" href="">Community</a>
-                        <a class="btn btn-link" href="">Profile</a>
-                        <a class="btn btn-link" href="{{route('login')}}">Login</a>
                     </div>
                     <div class="col-md-6 col-lg-3">
                         <h5 class="text-white mb-4">Newsletter</h5>
                         <p>Jika memiliki pertanyaan seputar alumni dan sekolah, bisa di chat lewat email. Terima kasih Gan Enn</p>
-                        <div class="position-relative w-100 mt-3">
+                        <div class="position-relative w-100  mt-3">
                             <input class="form-control border-0 rounded-pill w-100 ps-4 pe-5" type="text" placeholder="Your Email" style="height: 48px;">
                             <button type="button" class="btn shadow-none position-absolute top-0 end-0 mt-1 me-2"><i class="fa fa-paper-plane text-primary fs-4"></i></button>
                         </div>
@@ -44,8 +43,6 @@
                     <div class="row">
                         <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
                             &copy; <a class="border-bottom" href="#">Website Alumni CKTC</a>, All Right Reserved.
-
-							<!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
 							Designed By <a class="border-bottom">Kelompok 4</a>
                         </div>
                         <div class="col-md-6 text-center text-md-end">
@@ -60,4 +57,6 @@
                 </div>
             </div>
         </div>
+
+
         <!-- Footer End -->

@@ -1,74 +1,65 @@
 @extends('layouts.main')
 
-@section('content')
-    <div class="card-body">
-        <table id="example1" class="table table-bordered table-striped">
-            <thead>
-            <tr>
-                <th>Rendering engine</th>
-                <th>Browser</th>
-                <th>Platform(s)</th>
-                <th>Engine version</th>
-                <th>CSS grade</th>
-            </tr>
-            </thead>
-            <tbody>
-            <tr>
-                <td>Webkit</td>
-                <td>Safari 1.3</td>
-                <td>OSX.3</td>
-                <td>312.8</td>
-                <td>A</td>
-            </tr>
-            <tr>
-                <td>Webkit</td>
-                <td>Safari 2.0</td>
-                <td>OSX.4+</td>
-                <td>419.3</td>
-                <td>A</td>
-            </tr>
-            <tr>
-                <td>Webkit</td>
-                <td>Safari 3.0</td>
-                <td>OSX.4+</td>
-                <td>522.1</td>
-                <td>A</td>
-            </tr>
-            <tr>
-                <td>Webkit</td>
-                <td>OmniWeb 5.5</td>
-                <td>OSX.4+</td>
-                <td>420</td>
-                <td>A</td>
-            </tr>
-            <tr>
-                <td>Webkit</td>
-                <td>iPod Touch / iPhone</td>
-                <td>iPod</td>
-                <td>420.1</td>
-                <td>A</td>
-            </tr>
-            </tbody>
-            <tfoot>
-            <tr>
-                <th>Rendering engine</th>
-                <th>Browser</th>
-                <th>Platform(s)</th>
-                <th>Engine version</th>
-                <th>CSS grade</th>
-            </tr>
-            </tfoot>
-        </table>
-    </div>
-    <!-- /.card-body -->
-    </div>
-
-    <!-- DataTables -->
-    <link rel="stylesheet" href="{{asset('Admin-backend/plugins/datatables-bs4/css/dataTables.bootstrap4.min.css')}}">
-    <link rel="stylesheet"
-          href="{{asset('Admin-backend/plugins/datatables-responsive/css/responsive.bootstrap4.min.css')}}">
-    <link rel="stylesheet" href="{{asset('Admin-backend/plugins/datatables-buttons/css/buttons.bootstrap4.min.css')}}">
-
+@section('title')
+    Daftar Alumni
 @endsection
 
+@section('content')
+    <div class="container-xxl py-6">
+        <div class="container">
+            <h2 class="text-center mb-3">Data Alumni</h2>
+            <div class="card">
+                <div class="card-body">
+                    <table id="example1" class="table table-bordered table-hover">
+                        <thead>
+                        <tr>
+                            <th>Nama</th>
+                            <th>Foto</th>
+                            <th>No Telepon</th>
+                            <th>Email</th>
+                            <th>Alamat</th>
+                            <th>Tahun Lulus</th>
+                            <th>Pekerjaan</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        @forelse ($users as $user)
+                            <tr>
+                                <td>{{ $user->name }}</td>
+                                <td><img src="{{ asset('storage/'. $user->foto) }}" class="img-fluid" alt=""></td>
+                                <td>{{ $user->no_telp }}</td>
+                                <td>{{ $user->email }}</td>
+                                <td>{{ $user->alamat }}</td>
+                                <td>{{ $user->tahun_lulus }}</td>
+                                <td>{{ $user->pekerjaan }}</td>
+                            </tr>
+                        @empty
 
+                        @endforelse
+                        </tbody>
+                        <tfoot>
+                        <tr>
+                            <th>Nama</th>
+                            <th>Foto</th>
+                            <th>No Telepon</th>
+                            <th>Email</th>
+                            <th>Alamat</th>
+                            <th>Tahun Lulus</th>
+                            <th>Pekerjaan</th>
+                        </tr>
+                        </tfoot>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    @push('datatable')
+        <link rel="stylesheet"
+              href="{{asset('Admin-backend/plugins/datatables-bs4/css/dataTables.bootstrap4.min.css')}}">
+        <link rel="stylesheet"
+              href="{{asset('Admin-backend/plugins/datatables-responsive/css/responsive.bootstrap4.min.css')}}">
+        <link rel="stylesheet"
+              href="{{asset('Admin-backend/plugins/datatables-buttons/css/buttons.bootstrap4.min.css')}}">
+    @endpush
+@endsection

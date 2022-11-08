@@ -38,11 +38,10 @@ Route::group([
 });
 
 Route::middleware('auth')->group(function () {
+
     Route::get('/profile', [ProfileController::class, 'index'])->name('profile');
 
     Route::get('/alumni', [AlumniController::class, 'index'])->name('alumni');
-
-    Route::get('dashboard', DashboardController::class)->name('dashboard');
 
     Route::post('logout', [AuthController::class, 'logout'])->name('logout');
 

@@ -1,3 +1,4 @@
+@php use Laravolt\Avatar\Facade as Avatar; @endphp
 @extends('layouts.dashboard')
 
 @section('title')
@@ -17,6 +18,7 @@
                     <thead>
                     <tr>
                         <th>#</th>
+                        <th>Photo</th>
                         <th>Name</th>
                         <th>Email</th>
                         <th>Phone</th>
@@ -29,6 +31,9 @@
                     @forelse($admins as $key => $admin)
                         <tr>
                             <td>{{$key+1}}</td>
+                            <td>
+                                <img width="70px" src="{{$admin->foto ? asset($admin->foto) : Avatar::create($admin->name)->toBase64()}}" alt="" class="image img-fluid">
+                            </td>
                             <td>{{$admin->name}}</td>
                             <td>{{$admin->email}}</td>
                             <td>{{$admin->no_telp}}</td>

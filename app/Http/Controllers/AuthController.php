@@ -7,7 +7,6 @@ use App\Models\User;
 use Illuminate\Contracts\View\View;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Auth;
 
 class AuthController extends Controller
 {
@@ -18,12 +17,14 @@ class AuthController extends Controller
 
     public function authenticate(Request $request): RedirectResponse
     {
+        $remember = $request->has('remember_me');
+
         $credentials = $request->validate([
             'email' => 'required|email',
             'password' => 'required|min:8',
         ]);
 
-        if (Auth::attempt($credentials, $request->get('remember_me'))) {
+        if (auth()->attempt($credentials, $remember)) {
             if (auth()->user()->hasRole('User')) {
                 $request->session()->regenerate();
 
@@ -51,6 +52,8 @@ class AuthController extends Controller
 
         if ($request->file('foto')) $data['foto'] = $request->file('foto')->store('user-image');
 
+        $data['password'] = bcrypt($data['password']);
+
         $user = User::create($data);
 
         $user->assignRole('User');
@@ -60,7 +63,7 @@ class AuthController extends Controller
 
     public function logout(): RedirectResponse
     {
-        Auth::logout();
+        auth()->logout();
 
         request()->session()->invalidate();
 

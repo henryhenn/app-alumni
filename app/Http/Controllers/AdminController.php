@@ -39,7 +39,7 @@ class AdminController extends Controller
         $user = User::create($data);
         $user->assignRole('Admin');
 
-        return back(200)->with('message', 'Admin berhasil ditambahkan!');
+        return back()->with('message', 'Admin berhasil ditambahkan!');
     }
 
     /**
@@ -96,6 +96,6 @@ class AdminController extends Controller
     {
         $admin->delete();
 
-        return redirect()->back(200)->with('message', 'Admin berhasil dihapus');
+        return redirect()->back()->with('message', 'Admin berhasil dihapus');
     }
 }
