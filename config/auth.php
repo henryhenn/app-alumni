@@ -40,6 +40,15 @@ return [
             'driver' => 'session',
             'provider' => 'users',
         ],
+        'Admin' => [
+            'driver' => 'session',
+            'provider' => 'roles'
+        ],
+        'Super Admin' => [
+            'driver' => 'session',
+            'provider' => 'roles'
+        ],
+
     ],
 
     /*
@@ -64,6 +73,10 @@ return [
             'driver' => 'eloquent',
             'model' => App\Models\User::class,
         ],
+        'roles' => [
+            'driver' => 'eloquent',
+            'model' => Spatie\Permission\Models\Role::class,
+        ]
 
         // 'users' => [
         //     'driver' => 'database',

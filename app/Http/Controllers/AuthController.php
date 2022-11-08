@@ -2,9 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\Http\Requests\RegisterRequest;
+use App\Http\Requests\AccountRequest;
 use App\Models\User;
 use Illuminate\Contracts\View\View;
+use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 
@@ -15,24 +16,24 @@ class AuthController extends Controller
         return view('auth.login');
     }
 
-    public function authenticate(Request $request): \Illuminate\Http\RedirectResponse
+    public function authenticate(Request $request): RedirectResponse
     {
         $credentials = $request->validate([
             'email' => 'required|email',
             'password' => 'required|min:8',
         ]);
 
-        if (Auth::attempt($credentials)) {
+        if (Auth::attempt($credentials, $request->get('remember_me'))) {
             if (auth()->user()->hasRole('User')) {
                 $request->session()->regenerate();
 
-                return redirect()->intended('/');
+                return redirect()->intended('/')->with('message', 'Welcome back, ' . auth()->user()->name . '!');
             }
 
-            if (auth()->user()->hasRole('Admin')) {
+            if (auth()->user()->hasRole(['Admin', 'Super Admin'])) {
                 $request->session()->regenerate();
 
-                return redirect()->intended('dashboard');
+                return redirect()->intended('dashboard')->with('message', 'Welcome back, ' . auth()->user()->name . '!');
             }
         }
 
@@ -44,12 +45,27 @@ class AuthController extends Controller
         return view('auth.register');
     }
 
-    public function store(RegisterRequest $request): \Illuminate\Http\RedirectResponse
+    public function store(AccountRequest $request): RedirectResponse
     {
-        $user = User::create($request->validated());
+        $data = $request->validated();
+
+        if ($request->file('foto')) $data['foto'] = $request->file('foto')->store('user-image');
+        $data['password'] = bcrypt($data['password']);
+        $user = User::create($data);
 
         $user->assignRole('User');
 
-        return redirect()->route('dashboard.index');
+        return redirect()->route('login')->with('message', 'Registrasi Berhasil!');
+    }
+
+    public function logout(): RedirectResponse
+    {
+        Auth::logout();
+
+        request()->session()->invalidate();
+
+        request()->session()->regenerateToken();
+
+        return redirect()->route('home');
     }
 }
