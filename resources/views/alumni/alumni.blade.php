@@ -5,183 +5,53 @@
 @endsection
 
 @section('content')
-    <<<<<<< HEAD
-    <div class="container">
-        <h1 class="text-center font-weight-bold mb-4">Daftar Alumni</h1>
-        <table id="example1" class="table table-bordered table-striped">
-            <thead>
-            <tr>
-                <th>Rendering engine</th>
-                <th>Browser</th>
-                <th>Platform(s)</th>
-                <th>Engine version</th>
-                <th>CSS grade</th>
-            </tr>
-            </thead>
-            <tbody>
-            <tr>
-                <td>Trident</td>
-                <td>Internet
-                    Explorer 4.0
-                </td>
-                <td>Win 95+</td>
-                <td> 4</td>
-                <td>X</td>
-            </tr>
+    <div class="container-xxl py-6">
+        <div class="container">
+            <h2 class="text-center mb-3">Data Alumni</h2>
+            <div class="card">
+                <div class="card-body">
+                    <table id="example1" class="table table-bordered table-hover">
+                        <thead>
+                        <tr>
+                            <th>Nama</th>
+                            <th>Foto</th>
+                            <th>No Telepon</th>
+                            <th>Email</th>
+                            <th>Alamat</th>
+                            <th>Tahun Lulus</th>
+                            <th>Pekerjaan</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        @forelse ($users as $user)
+                            <tr>
+                                <td>{{ $user->name }}</td>
+                                <td><img src="{{ asset('storage/'. $user->foto) }}" class="img-fluid" alt=""></td>
+                                <td>{{ $user->no_telp }}</td>
+                                <td>{{ $user->email }}</td>
+                                <td>{{ $user->alamat }}</td>
+                                <td>{{ $user->tahun_lulus }}</td>
+                                <td>{{ $user->pekerjaan }}</td>
+                            </tr>
+                        @empty
 
-            <tr>
-                <td>Trident</td>
-                <td>Internet
-                    Explorer 4.0
-                </td>
-                <td>Win 95+</td>
-                <td> 4</td>
-                <td>X</td>
-            </tr>
-
-            <tr>
-                <td>Webkit</td>
-                <td>Internet
-                    Explorer 4.0
-                </td>
-                <td>Win 96+</td>
-                <td> 4</td>
-                <td>X</td>
-            </tr>
-
-            <tr>
-                <td>Webkit</td>
-                <td>Internet
-                    Explorer 4.0
-                </td>
-                <td>Win 96+</td>
-                <td> 4</td>
-                <td>X</td>
-            </tr>
-
-            <tr>
-                <td>Webkit</td>
-                <td>Internet
-                    Explorer 4.0
-                </td>
-                <td>Win 96+</td>
-                <td> 4</td>
-                <td>X</td>
-            </tr>
-
-            <tr>
-                <td>Webkit</td>
-                <td>Internet
-                    Explorer 4.0
-                </td>
-                <td>Win 96+</td>
-                <td> 4</td>
-                <td>X</td>
-            </tr>
-
-            <tr>
-                <td>Webkit</td>
-                <td>Internet
-                    Explorer 4.0
-                </td>
-                <td>Win 96+</td>
-                <td> 4</td>
-                <td>X</td>
-            </tr>
-
-            <tr>
-                <td>Webkit</td>
-                <td>Internet
-                    Explorer 4.0
-                </td>
-                <td>Win 96+</td>
-                <td> 4</td>
-                <td>X</td>
-            </tr>
-
-            <tr>
-                <td>Webkit</td>
-                <td>Internet
-                    Explorer 4.0
-                </td>
-                <td>Win 96+</td>
-                <td> 4</td>
-                <td>X</td>
-            </tr>
-            <tr>
-                <td>Webkit</td>
-                <td>Internet
-                    Explorer 4.0
-                </td>
-                <td>Win 96+</td>
-                <td> 4</td>
-                <td>X</td>
-            </tr>
-            <tr>
-                <td>Webkit</td>
-                <td>Internet
-                    Explorer 4.0
-                </td>
-                <td>Win 96+</td>
-                <td> 4</td>
-                <td>X</td>
-            </tr>
-            <tr>
-                <td>Webkit</td>
-                <td>Internet
-                    Explorer 4.0
-                </td>
-                <td>Win 96+</td>
-                <td> 4</td>
-                <td>X</td>
-            </tr>
-            <tr>
-                <td>Webkit</td>
-                <td>Internet
-                    Explorer 4.0
-                </td>
-                <td>Win 96+</td>
-                <td> 4</td>
-                <td>X</td>
-            </tr>
-            <tr>
-                <td>Webkit</td>
-                <td>Internet
-                    Explorer 4.0
-                </td>
-                <td>Win 96+</td>
-                <td> 4</td>
-                <td>X</td>
-            </tr>
-            <tr>
-                <td>Webkit</td>
-                <td>Internet
-                    Explorer 4.0
-                </td>
-                <td>Win 96+</td>
-                <td> 4</td>
-                <td>X</td>
-            </tr>
-            <tr>
-                <td>Webkit</td>
-                <td>Internet
-                    Explorer 4.0
-                </td>
-                <td>Win 96+</td>
-                <td> 4</td>
-                <td>X</td>
-            </tr>
-            </tbody>
-            <tfoot>
-            <tr>
-                <th>Rendering engine</th>
-                <th>Browser</th>
-                <th>Platform(s)</th>
-                <th>Engine version</th>
-                <th>CSS grade</th>
-            </tr>
-            </tfoot>
-        </table>
+                        @endforelse
+                        </tbody>
+                        <tfoot>
+                        <tr>
+                            <th>Nama</th>
+                            <th>Foto</th>
+                            <th>No Telepon</th>
+                            <th>Email</th>
+                            <th>Alamat</th>
+                            <th>Tahun Lulus</th>
+                            <th>Pekerjaan</th>
+                        </tr>
+                        </tfoot>
+                    </table>
+                </div>
+            </div>
+        </div>
     </div>
 
     @push('datatable')

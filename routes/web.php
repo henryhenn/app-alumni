@@ -39,10 +39,12 @@ Route::group([
     Route::get('/profile', [ProfileController::class, 'index'])->name('profile');
 
     Route::get('/alumni', [AlumniController::class, 'index'])->name('alumni');
-    
+
     Route::post('logout', [AuthController::class, 'logout'])->name('logout');
 
     Route::resource('my-profile', MyProfileController::class)->only('index', 'edit', 'update');
+
+    Route::view('community', 'community.index');
 
 Route::group(['middleware' => ['role:Admin|Super Admin']], function () {
     Route::resource('admins', AdminController::class)->except('show');
