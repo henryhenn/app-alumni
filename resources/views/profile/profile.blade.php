@@ -11,7 +11,7 @@
             <div class="row g-4">
                 <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                     <div class="team-item">
-                        <h5>Full Name</h5>
+                        <h5>Henry Salim</h5>
                         <p class="mb-4">Designation</p>
                         <img class="img-fluid rounded-circle w-100 mb-4" src="{{ asset('img/team-1.jpg') }}"
                              alt="">
@@ -27,7 +27,7 @@
                 </div>
                 <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
                     <div class="team-item">
-                        <h5>Full Name</h5>
+                        <h5>Steven Widjaja</h5>
                         <p class="mb-4">Designation</p>
                         <img class="img-fluid rounded-circle w-100 mb-4" src="{{ asset('img/team-2.jpg') }}"
                              alt="">
@@ -43,7 +43,7 @@
                 </div>
                 <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
                     <div class="team-item">
-                        <h5>Full Name</h5>
+                        <h5>Danniel</h5>
                         <p class="mb-4">Designation</p>
                         <img class="img-fluid rounded-circle w-100 mb-4" src="{{ asset('img/team-3.jpg') }}"
                              alt="">
@@ -59,7 +59,7 @@
                 </div>
                 <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
                     <div class="team-item">
-                        <h5>Full Name</h5>
+                        <h5>Devon Audric</h5>
                         <p class="mb-4">Designation</p>
                         <img class="img-fluid rounded-circle w-100 mb-4" src="{{ asset('img/team-4.jpg') }}"
                              alt="">

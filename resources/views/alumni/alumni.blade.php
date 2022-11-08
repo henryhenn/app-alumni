@@ -5,6 +5,7 @@
 @endsection
 
 @section('content')
+    <<<<<<< HEAD
     <div class="container">
         <h1 class="text-center font-weight-bold mb-4">Daftar Alumni</h1>
         <table id="example1" class="table table-bordered table-striped">
@@ -19,39 +20,156 @@
             </thead>
             <tbody>
             <tr>
+                <td>Trident</td>
+                <td>Internet
+                    Explorer 4.0
+                </td>
+                <td>Win 95+</td>
+                <td> 4</td>
+                <td>X</td>
+            </tr>
+
+            <tr>
+                <td>Trident</td>
+                <td>Internet
+                    Explorer 4.0
+                </td>
+                <td>Win 95+</td>
+                <td> 4</td>
+                <td>X</td>
+            </tr>
+
+            <tr>
                 <td>Webkit</td>
-                <td>Safari 1.3</td>
-                <td>OSX.3</td>
-                <td>312.8</td>
-                <td>A</td>
+                <td>Internet
+                    Explorer 4.0
+                </td>
+                <td>Win 96+</td>
+                <td> 4</td>
+                <td>X</td>
+            </tr>
+
+            <tr>
+                <td>Webkit</td>
+                <td>Internet
+                    Explorer 4.0
+                </td>
+                <td>Win 96+</td>
+                <td> 4</td>
+                <td>X</td>
+            </tr>
+
+            <tr>
+                <td>Webkit</td>
+                <td>Internet
+                    Explorer 4.0
+                </td>
+                <td>Win 96+</td>
+                <td> 4</td>
+                <td>X</td>
+            </tr>
+
+            <tr>
+                <td>Webkit</td>
+                <td>Internet
+                    Explorer 4.0
+                </td>
+                <td>Win 96+</td>
+                <td> 4</td>
+                <td>X</td>
+            </tr>
+
+            <tr>
+                <td>Webkit</td>
+                <td>Internet
+                    Explorer 4.0
+                </td>
+                <td>Win 96+</td>
+                <td> 4</td>
+                <td>X</td>
+            </tr>
+
+            <tr>
+                <td>Webkit</td>
+                <td>Internet
+                    Explorer 4.0
+                </td>
+                <td>Win 96+</td>
+                <td> 4</td>
+                <td>X</td>
+            </tr>
+
+            <tr>
+                <td>Webkit</td>
+                <td>Internet
+                    Explorer 4.0
+                </td>
+                <td>Win 96+</td>
+                <td> 4</td>
+                <td>X</td>
             </tr>
             <tr>
                 <td>Webkit</td>
-                <td>Safari 2.0</td>
-                <td>OSX.4+</td>
-                <td>419.3</td>
-                <td>A</td>
+                <td>Internet
+                    Explorer 4.0
+                </td>
+                <td>Win 96+</td>
+                <td> 4</td>
+                <td>X</td>
             </tr>
             <tr>
                 <td>Webkit</td>
-                <td>Safari 3.0</td>
-                <td>OSX.4+</td>
-                <td>522.1</td>
-                <td>A</td>
+                <td>Internet
+                    Explorer 4.0
+                </td>
+                <td>Win 96+</td>
+                <td> 4</td>
+                <td>X</td>
             </tr>
             <tr>
                 <td>Webkit</td>
-                <td>OmniWeb 5.5</td>
-                <td>OSX.4+</td>
-                <td>420</td>
-                <td>A</td>
+                <td>Internet
+                    Explorer 4.0
+                </td>
+                <td>Win 96+</td>
+                <td> 4</td>
+                <td>X</td>
             </tr>
             <tr>
                 <td>Webkit</td>
-                <td>iPod Touch / iPhone</td>
-                <td>iPod</td>
-                <td>420.1</td>
-                <td>A</td>
+                <td>Internet
+                    Explorer 4.0
+                </td>
+                <td>Win 96+</td>
+                <td> 4</td>
+                <td>X</td>
+            </tr>
+            <tr>
+                <td>Webkit</td>
+                <td>Internet
+                    Explorer 4.0
+                </td>
+                <td>Win 96+</td>
+                <td> 4</td>
+                <td>X</td>
+            </tr>
+            <tr>
+                <td>Webkit</td>
+                <td>Internet
+                    Explorer 4.0
+                </td>
+                <td>Win 96+</td>
+                <td> 4</td>
+                <td>X</td>
+            </tr>
+            <tr>
+                <td>Webkit</td>
+                <td>Internet
+                    Explorer 4.0
+                </td>
+                <td>Win 96+</td>
+                <td> 4</td>
+                <td>X</td>
             </tr>
             </tbody>
             <tfoot>
@@ -75,5 +193,3 @@
               href="{{asset('Admin-backend/plugins/datatables-buttons/css/buttons.bootstrap4.min.css')}}">
     @endpush
 @endsection
-
-
