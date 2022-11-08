@@ -27,7 +27,5 @@ Route::group([
     Route::get('/register', 'register')->name('register');
 });
 
-Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'index'])->name('profile');
     Route::get('/alumni', [AlumniController::class, 'index'])->name('alumni');
-});

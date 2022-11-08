@@ -1,15 +1,4 @@
 <div class="container-xxl bg-primary hero-header">
-<<<<<<< HEAD:resources/views/frontend-template/layouts/hero.blade.php
-    <div class="container">
-        <div class="row g-5 align-items-center">
-            <div class="col-lg-6 text-center text-lg-start">
-                <h1 class="text-white mb-4 animated zoomIn">Selamat datang di aplikasi Alumni </h1>
-                <p class="text-white pb-3 animated zoomIn">Tempor rebum no at dolore lorem clita rebum rebum ipsum rebum
-                    stet dolor sed justo kasd. Ut dolor sed magna dolor sea diam. Sit diam sit justo amet ipsum vero
-                    ipsum clita lorem</p>
-                <a href=""
-                    class="btn btn-outline-light rounded-pill border-2 py-3 px-5 animated slideInRight">Learn More</a>
-=======
                 <div class="container">
                     <div class="row g-5 align-items-center">
                         <div class="col-lg-6 text-center text-lg-start">
@@ -22,10 +11,6 @@
                         </div>
                     </div>
                 </div>
->>>>>>> origin/main:resources/views/layouts/sections/hero.blade.php
-            </div>
-            <div class="col-lg-6 text-center text-lg-start">
-                <img class="img-fluid animated zoomIn" src="{{ asset('img/hero.png') }}" alt="">
             </div>
         </div>
     </div>

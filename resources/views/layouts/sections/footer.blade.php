@@ -27,14 +27,6 @@
                         <h5 class="text-white mb-4">Popular Link</h5>
                         <a class="btn btn-link" href="{{route('home')}}">Home</a>
                         <a class="btn btn-link" href="">Community</a>
-<<<<<<< HEAD:resources/views/frontend-template/layouts/footer.blade.php
-                        <a class="btn btn-link" href="{{route('profile')}}">Profile</a>
-                        <a class="btn btn-link" href="{{route('alumni')}}">Alumni</a>
-                        <a class="btn btn-link" href="login">Login</a>
-=======
-                        <a class="btn btn-link" href="">Profile</a>
-                        <a class="btn btn-link" href="{{route('login')}}">Login</a>
->>>>>>> origin/main:resources/views/layouts/sections/footer.blade.php
                     </div>
                     <div class="col-md-6 col-lg-3">
                         <h5 class="text-white mb-4">Newsletter</h5>
@@ -51,8 +43,6 @@
                     <div class="row">
                         <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
                             &copy; <a class="border-bottom" href="#">Website Alumni CKTC</a>, All Right Reserved.
-
-							<!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
 							Designed By <a class="border-bottom">Kelompok 4</a>
                         </div>
                         <div class="col-md-6 text-center text-md-end">
@@ -68,5 +58,5 @@
             </div>
         </div>
 
-        
+
         <!-- Footer End -->

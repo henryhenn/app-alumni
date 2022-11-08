@@ -7,18 +7,7 @@
             <span class="fa fa-bars"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
-<<<<<<< HEAD:resources/views/frontend-template/layouts/navbar.blade.php
-            <div class="navbar-nav ms-auto py-0">
-                <a href="/" class="nav-item nav-link active">Home</a>
-                <a href="#" class="nav-item nav-link">Community</a>
-                <a href="{{ route('profile') }}" class="nav-item nav-link">Profile</a>
-                <a href="{{ route('alumni') }}" class="nav-item nav-link">Alumni</a>
-            </div>
-        </div>
-        <a href="login" class="btn btn-dark rounded-pill text-white py-2 px-4 ms-lg-5 animated slideInRight">Login</a>
-        </div>
-    </nav>
-=======
+
                     <div class="navbar-nav ms-auto py-0">
                         <a href="{{route('home')}}" class="nav-item {{request()->routeIs('home') ? 'active' : ''}} nav-link">Home</a>
                         <a href="" class="nav-item nav-link">Community</a>
@@ -29,4 +18,3 @@
                     <a href="{{route('login')}}" class="btn btn-dark rounded-pill text-white py-2 px-4 ms-lg-5 animated slideInRight">Login</a>
                 </div>
             </nav>
->>>>>>> origin/main:resources/views/layouts/sections/navbar.blade.php
