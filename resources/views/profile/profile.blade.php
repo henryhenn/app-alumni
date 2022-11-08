@@ -1,5 +1,8 @@
 @extends('layouts.main')
 
+@section('title')
+Creator's Profilephp
+@endsection
 @section('content')
     <!-- Team Start -->
     <div class="container-xxl py-6">
@@ -21,7 +24,7 @@
                             <a class="btn btn-square text-primary bg-white m-1" href=""><i
                                         class="fab fa-twitter"></i></a>
                             <a class="btn btn-square text-primary bg-white m-1" href=""><i
-                                        class="fab fa-linkedin-in"></i></a>
+                                        class="fab fa-instagram"></i></a>
                         </div>
                     </div>
                 </div>
@@ -37,7 +40,7 @@
                             <a class="btn btn-square text-primary bg-white m-1" href=""><i
                                         class="fab fa-twitter"></i></a>
                             <a class="btn btn-square text-primary bg-white m-1" href=""><i
-                                        class="fab fa-linkedin-in"></i></a>
+                                        class="fab fa-instagram"></i></a>
                         </div>
                     </div>
                 </div>
@@ -53,7 +56,7 @@
                             <a class="btn btn-square text-primary bg-white m-1" href=""><i
                                         class="fab fa-twitter"></i></a>
                             <a class="btn btn-square text-primary bg-white m-1" href=""><i
-                                        class="fab fa-linkedin-in"></i></a>
+                                        class="fab fa-instagram"></i></a>
                         </div>
                     </div>
                 </div>
@@ -69,7 +72,7 @@
                             <a class="btn btn-square text-primary bg-white m-1" href=""><i
                                         class="fab fa-twitter"></i></a>
                             <a class="btn btn-square text-primary bg-white m-1" href=""><i
-                                        class="fab fa-linkedin-in"></i></a>
+                                        class="fab fa-instagram"></i></a>
                         </div>
                     </div>
                 </div>

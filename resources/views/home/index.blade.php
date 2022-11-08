@@ -6,7 +6,7 @@
         <div class="container">
             <div class="row g-5 align-items-center">
                 <div class="col-lg-6 wow zoomIn" data-wow-delay="0.1s">
-                    <img class="img-fluid" src="{{asset('img/komunity.png')}}">
+                    <img class="img-fluid" src="{{ asset('img/komunity.png') }}">
                 </div>
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
                     <div class="d-inline-block border rounded-pill text-primary px-4 mb-3">Community</div>
@@ -19,8 +19,10 @@
                                 <i class="fa fa-user-tie text-white"></i>
                             </div>
                             <div class="ms-4">
-                                <h6>Business Planning</h6>
-                                <span>Tempor erat elitr rebum at clita. Diam dolor ipsum amet eos erat ipsum lorem et sit sed stet lorem sit clita duo</span>
+                                <h6>Lowongan Pekerjaan</h6>
+                                <span>Dapatkan informasi lowongan pekerjaan dari para alumni sekolah SMK Cinta Kasih Tzu
+                                    Chi.
+                                </span>
                             </div>
                         </div>
                         <div class="col-12 d-flex">
@@ -28,8 +30,8 @@
                                 <i class="fa fa-chart-line text-white"></i>
                             </div>
                             <div class="ms-4">
-                                <h6>Financial Analaysis</h6>
-                                <span>Tempor erat elitr rebum at clita. Diam dolor ipsum amet eos erat ipsum lorem et sit sed stet lorem sit clita duo</span>
+                                <h6>Informasi Terbaru</h6>
+                                <span>Dapatkan informasi terbaru terkait sekolah SMK Cinta Kasih Tzu Chi.</span>
                             </div>
                         </div>
                     </div>
@@ -42,14 +44,15 @@
         <div class="container px-lg-5">
             <div class="row align-items-center" style="height: 250px;">
                 <div class="col-12 col-md-6">
-                    <h3 class="text-white">Ready to get started</h3>
+                    <h3 class="text-white">Yuk, Register di Sini</h3>
                     <p class="text-white">Please Register here !</p>
                     <div class="position-relative w-100 mt-3">
-                        <a href="{{route('register')}}" class="btn btn-outline-light rounded-pill border-2 py-3 px-5 animated slideInRight">Register</a>
+                        <a href="{{ route('register') }}"
+                            class="btn btn-outline-light rounded-pill border-2 py-3 px-5 animated slideInRight">Register</a>
                     </div>
                 </div>
                 <div class="col-md-6 text-center mb-n5 d-none d-md-block">
-                    <img class="img-fluid mt-5" style="max-height: 250px;" src="{{asset('img/newsletter.png')}}">
+                    <img class="img-fluid mt-5" style="max-height: 250px;" src="{{ asset('img/newsletter.png') }}">
                 </div>
             </div>
         </div>
@@ -60,11 +63,11 @@
             <div class="row g-5">
                 <div class="col-lg-5 wow fadeInUp" data-wow-delay="0.1s">
                     <div class="d-inline-block border rounded-pill text-primary px-4 mb-3">Features</div>
-                    <h2 class="mb-4">Why People Choose Us? We Are Trusted & Award Wining Agency</h2>
-                    <p>Clita nonumy sanctus nonumy et clita tempor, et sea amet ut et sadipscing rebum amet takimata
-                        amet, sed accusam eos eos dolores dolore et. Et ea ea dolor rebum invidunt clita eos. Sea
-                        accusam stet stet ipsum, sit ipsum et ipsum kasd</p>
-                    <p>Et ea ea dolor rebum invidunt clita eos. Sea accusam stet stet ipsum, sit ipsum et ipsum kasd</p>
+                    <h2 class="mb-4">Kelebihan Aplikasi Alumni SMK Cinta Kasih Tzu Chi</h2>
+                    <p>Aplikasi alumni milik SMK Cinta Kasih Tzu Chi ini memiliki berbagai macam kelebihan dan manfaat.
+                        Siapa pun siswa dan guru SMK yang bergabung ke aplikasi alumni milik SMK Cinta Kasih Tzu Chi ini
+                        juga bisa mendapatkan berbagai macam informasi seputar SMK Cinta Kasih Tzu Chi dan informasi dari
+                        para alumni yang sudah lulus.</p>
                     <a class="btn btn-primary rounded-pill py-3 px-5 mt-2" href="">Read More</a>
                 </div>
                 <div class="col-lg-7">
@@ -72,56 +75,48 @@
                         <div class="col-sm-6 wow fadeIn" data-wow-delay="0.1s">
                             <div class="d-flex align-items-center mb-3">
                                 <div class="flex-shrink-0 btn-square bg-primary rounded-circle me-3">
-                                    <i class="fa fa-cubes text-white"></i>
+                                    <i class="fa fa-info text-white"></i>
                                 </div>
-                                <h6 class="mb-0">Best In Industry</h6>
+                                <h6 class="mb-0">Informasi Terbaru</h6>
                             </div>
-                            <span>Magna sea eos sit dolor, ipsum amet ipsum lorem diam eos diam dolor</span>
+                            <span>Para aggota akan mendapatkan berbagai macam informasi seputar SMK Cinta Kasih Tzu Chi, seperti event dan lomba.</span>
                         </div>
                         <div class="col-sm-6 wow fadeIn" data-wow-delay="0.2s">
                             <div class="d-flex align-items-center mb-3">
                                 <div class="flex-shrink-0 btn-square bg-primary rounded-circle me-3">
-                                    <i class="fa fa-percent text-white"></i>
+                                    <i class="fa fa-briefcase text-white"></i>
                                 </div>
-                                <h6 class="mb-0">99% Success Rate</h6>
+                                <h6 class="mb-0">Informasi Lowongan Kerja</h6>
                             </div>
-                            <span>Magna sea eos sit dolor, ipsum amet ipsum lorem diam eos diam dolor</span>
+                            <span>Para alumni bisa mendapatkan banyak informasi tentang berbagai macam lowongan pekerjaan.</span>
                         </div>
                         <div class="col-sm-6 wow fadeIn" data-wow-delay="0.3s">
                             <div class="d-flex align-items-center mb-3">
                                 <div class="flex-shrink-0 btn-square bg-primary rounded-circle me-3">
-                                    <i class="fa fa-award text-white"></i>
+                                    <i class="fa fa-comments text-white"></i>
                                 </div>
-                                <h6 class="mb-0">Award Winning</h6>
+                                <h6 class="mb-0">Forum Chat</h6>
                             </div>
-                            <span>Magna sea eos sit dolor, ipsum amet ipsum lorem diam eos diam dolor</span>
+                            <span>Seluruh siswa, guru, dan alumni SMK Cinta Kasih Tzu Chi dapat berkomunikasi di forum chat.</span>
                         </div>
                         <div class="col-sm-6 wow fadeIn" data-wow-delay="0.4s">
                             <div class="d-flex align-items-center mb-3">
                                 <div class="flex-shrink-0 btn-square bg-primary rounded-circle me-3">
-                                    <i class="fa fa-smile-beam text-white"></i>
+                                    <i class="fa fa-users-between-lines text-white"></i>
                                 </div>
-                                <h6 class="mb-0">100% Happy Client</h6>
+                                <h6 class="mb-0">Menambah Relasi</h6>
                             </div>
-                            <span>Magna sea eos sit dolor, ipsum amet ipsum lorem diam eos diam dolor</span>
+                            <span>Para anggota dapat terhubung satu sama lain sehingga dapat menambah relasi baru.</span>
                         </div>
                         <div class="col-sm-6 wow fadeIn" data-wow-delay="0.5s">
                             <div class="d-flex align-items-center mb-3">
                                 <div class="flex-shrink-0 btn-square bg-primary rounded-circle me-3">
-                                    <i class="fa fa-user-tie text-white"></i>
+                                    <i class="fa fa-people-line text-white"></i>
                                 </div>
-                                <h6 class="mb-0">Professional Advisors</h6>
+                                <h6 class="mb-0">Data Para Alumni</h6>
                             </div>
-                            <span>Magna sea eos sit dolor, ipsum amet ipsum lorem diam eos diam dolor</span>
+                            <span>Para anggota bisa melihat seluruh foto dan nama para alumni yang sudah lulus.</span>
                         </div>
-                        <div class="col-sm-6 wow fadeIn" data-wow-delay="0.6s">
-                            <div class="d-flex align-items-center mb-3">
-                                <div class="flex-shrink-0 btn-square bg-primary rounded-circle me-3">
-                                    <i class="fa fa-headset text-white"></i>
-                                </div>
-                                <h6 class="mb-0">24/7 Customer Support</h6>
-                            </div>
-                            <span>Magna sea eos sit dolor, ipsum amet ipsum lorem diam eos diam dolor</span>
                         </div>
                     </div>
                 </div>
@@ -135,14 +130,14 @@
     <div class="container-xxl bg-primary my-6 py-5 wow fadeInUp" data-wow-delay="0.1s">
         <div class="container">
             <div class="owl-carousel client-carousel">
-                <a href="#"><img class="img-fluid" src="{{asset('img/logo-1.png')}}" alt=""></a>
-                <a href="#"><img class="img-fluid" src="{{asset('img/logo-2.png')}}" alt=""></a>
-                <a href="#"><img class="img-fluid" src="{{asset('img/logo-3.png')}}" alt=""></a>
-                <a href="#"><img class="img-fluid" src="{{asset('img/logo-4.png')}}" alt=""></a>
-                <a href="#"><img class="img-fluid" src="{{asset('img/logo-5.png')}}" alt=""></a>
-                <a href="#"><img class="img-fluid" src="{{asset('img/logo-6.png')}}" alt=""></a>
-                <a href="#"><img class="img-fluid" src="{{asset('img/logo-7.png')}}" alt=""></a>
-                <a href="#"><img class="img-fluid" src="{{asset('img/logo-8.png')}}" alt=""></a>
+                <a href="#"><img class="img-fluid" src="{{ asset('img/logo-1.png') }}" alt=""></a>
+                <a href="#"><img class="img-fluid" src="{{ asset('img/logo-2.png') }}" alt=""></a>
+                <a href="#"><img class="img-fluid" src="{{ asset('img/logo-3.png') }}" alt=""></a>
+                <a href="#"><img class="img-fluid" src="{{ asset('img/logo-4.png') }}" alt=""></a>
+                <a href="#"><img class="img-fluid" src="{{ asset('img/logo-5.png') }}" alt=""></a>
+                <a href="#"><img class="img-fluid" src="{{ asset('img/logo-6.png') }}" alt=""></a>
+                <a href="#"><img class="img-fluid" src="{{ asset('img/logo-7.png') }}" alt=""></a>
+                <a href="#"><img class="img-fluid" src="{{ asset('img/logo-8.png') }}" alt=""></a>
             </div>
         </div>
     </div>
@@ -154,7 +149,7 @@
         <div class="container">
             <div class="mx-auto text-center wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
                 <div class="d-inline-block border rounded-pill text-primary px-4 mb-3">Alumni</div>
-                <h2 class="mb-5">What Our Alumni CKTC Say!</h2>
+                <h2 class="mb-5">Alumni Cinta Kasih Tzu Chi Say</h2>
             </div>
             <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.1s">
                 <div class="testimonial-item rounded p-4">
@@ -162,7 +157,7 @@
                     <p>Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore
                         diam</p>
                     <div class="d-flex align-items-center">
-                        <img class="img-fluid flex-shrink-0 rounded-circle" src="{{asset('img/testimonial-1.jpg')}}">
+                        <img class="img-fluid flex-shrink-0 rounded-circle" src="{{ asset('img/testimonial-1.jpg') }}">
                         <div class="ps-3">
                             <h6 class="mb-1">Client Name</h6>
                             <small>Profession</small>
@@ -174,7 +169,7 @@
                     <p>Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore
                         diam</p>
                     <div class="d-flex align-items-center">
-                        <img class="img-fluid flex-shrink-0 rounded-circle" src="{{asset('img/testimonial-2.jpg')}}">
+                        <img class="img-fluid flex-shrink-0 rounded-circle" src="{{ asset('img/testimonial-2.jpg') }}">
                         <div class="ps-3">
                             <h6 class="mb-1">Client Name</h6>
                             <small>Profession</small>
@@ -186,7 +181,7 @@
                     <p>Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore
                         diam</p>
                     <div class="d-flex align-items-center">
-                        <img class="img-fluid flex-shrink-0 rounded-circle" src="{{asset('img/testimonial-3.jpg')}}">
+                        <img class="img-fluid flex-shrink-0 rounded-circle" src="{{ asset('img/testimonial-3.jpg') }}">
                         <div class="ps-3">
                             <h6 class="mb-1">Client Name</h6>
                             <small>Profession</small>
@@ -198,7 +193,7 @@
                     <p>Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore
                         diam</p>
                     <div class="d-flex align-items-center">
-                        <img class="img-fluid flex-shrink-0 rounded-circle" src="{{asset('img/testimonial-4.jpg')}}">
+                        <img class="img-fluid flex-shrink-0 rounded-circle" src="{{ asset('img/testimonial-4.jpg') }}">
                         <div class="ps-3">
                             <h6 class="mb-1">Client Name</h6>
                             <small>Profession</small>

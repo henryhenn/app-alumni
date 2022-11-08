@@ -8,6 +8,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\AlumniController;
+use App\Http\Controllers\CommunityController;
 
 /*
 |--------------------------------------------------------------------------
@@ -46,6 +47,8 @@ Route::middleware('auth')->group(function () {
     Route::post('logout', [AuthController::class, 'logout'])->name('logout');
 
     Route::resource('my-profile', MyProfileController::class)->only('index', 'edit', 'update');
+
+    Route::get('communities', [CommunityController::class, 'index'])->name('community');
 });
 
 Route::group(['middleware' => ['role:Admin|Super Admin']], function () {

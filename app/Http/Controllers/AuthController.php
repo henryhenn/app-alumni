@@ -37,7 +37,7 @@ class AuthController extends Controller
             }
         }
 
-        return back(400)->with('error', 'Email atau Password salah. Silakan coba lagi!');
+        return back()->with('error', 'Email atau Password salah. Silakan coba lagi!');
     }
 
     public function register(): View
