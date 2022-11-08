@@ -22,6 +22,5 @@
     @else
         <a href="{{route('login')}}"
            class="btn btn-dark rounded-pill text-white py-2 px-4 ms-lg-5 animated slideInRight">Login</a>
-        @endauth
-        </div>
+    @endauth
 </nav>

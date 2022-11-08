@@ -35,14 +35,6 @@
                     @enderror
                 </div>
                 <div class="form-group">
-                    <label for="email">Email</label>
-                    <input type="text" name="email" id="email" value="{{old('email', auth()->user()->email)}}"
-                           class="form-control @error('email') is-invalid @enderror">
-                    @error('email')
-                    <div class="invalid-feedback mt-2">{{$message}}</div>
-                    @enderror
-                </div>
-                <div class="form-group">
                     <label for="alamat">Alamat</label>
                     <input type="text" name="alamat" id="alamat" value="{{old('alamat', auth()->user()->alamat)}}"
                            class="form-control @error('alamat') is-invalid @enderror">

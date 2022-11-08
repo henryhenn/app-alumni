@@ -1,6 +1,6 @@
 @php use Laravolt\Avatar\Facade as Avatar; @endphp
 <aside class="main-sidebar sidebar-dark-primary elevation-4">
-    <a href="{{route('dashboard')}}" class="brand-link text-center">
+    <a href="{{route('home')}}" class="brand-link text-center">
         <span class="brand-text font-weight-bold">App-Alumni</span>
     </a>
 
@@ -20,14 +20,15 @@
             <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu"
                 data-accordion="false">
                 <li class="nav-item">
-                    <a href="#" class="nav-link {{request()->routeIs('dashboard') ? 'active' : ''}}">
+                    <a href="{{route('dashboard')}}" class="nav-link {{request()->routeIs('dashboard') ? 'active' : ''}}">
                         <i class="nav-icon fas fa-tachometer-alt"></i>
                         <p>
                             Dashboard
                         </p>
                     </a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item {{request()->routeIs('my-profile
+.*') ? 'menu-open' : ''}}">
                     <a href="#" class="nav-link {{request()->routeIs('my-profile.*') ? 'active' : ''}}">
                         <i class="nav-icon fas fa-id-card"></i>
                         <p>
@@ -52,7 +53,7 @@
                     </ul>
                 </li>
                 @role('Super Admin')
-                <li class="nav-item">
+                <li class="nav-item {{request()->routeIs('admins.*') ? 'menu-open' : ''}}">
                     <a href="#" class="nav-link {{request()->routeIs('admins.*') ? 'active' : ''}}">
                         <i class="nav-icon fas fa-user"></i>
                         <p>

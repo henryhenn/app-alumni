@@ -1,5 +1,9 @@
 @extends('layouts.main')
 
+@section('title')
+    Home
+@endsection
+
 @section('content')
     <!-- About Start -->
     <div class="container-xxl py-6" id="komunitas">

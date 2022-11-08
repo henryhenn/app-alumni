@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Website | Alumni</title>
+    <title>@yield('title') | Alumni App</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
@@ -40,9 +40,10 @@
         @include('layouts.sections.front.navbar')
 
         @include('layouts.sections.front.hero')
+
+        @yield('content')
     </div>
 
-    @yield('content')
 
     @include('layouts.sections.front.footer')
 
@@ -56,6 +57,7 @@
 <script src="{{asset('lib/waypoints/waypoints.min.js')}}"></script>
 <script src="{{asset('lib/owlcarousel/owl.carousel.min.js')}}"></script>
 <script src="{{asset('js/main.js')}}"></script>
+@stack('datatable')
 
 </body>
 

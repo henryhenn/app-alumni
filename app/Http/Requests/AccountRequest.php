@@ -26,7 +26,7 @@ class AccountRequest extends FormRequest
     {
         return [
             'name' => 'required|max:255',
-            'email' => 'required|max:55|email',
+            'email' => 'required|max:55|email|unique:users,email|sometimes',
             'password' => ['required', Password::default(), 'min:8', 'sometimes'],
             'alamat' => 'required',
             'jenis_kelamin' => 'required',

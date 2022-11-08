@@ -1,7 +1,12 @@
 @extends('layouts.main')
 
+@section('title')
+    Daftar Alumni
+@endsection
+
 @section('content')
-    <div class="card-body">
+    <div class="container">
+        <h1 class="text-center font-weight-bold mb-4">Daftar Alumni</h1>
         <table id="example1" class="table table-bordered table-striped">
             <thead>
             <tr>
@@ -60,15 +65,15 @@
             </tfoot>
         </table>
     </div>
-    <!-- /.card-body -->
-    </div>
 
-    <!-- DataTables -->
-    <link rel="stylesheet" href="{{asset('Admin-backend/plugins/datatables-bs4/css/dataTables.bootstrap4.min.css')}}">
-    <link rel="stylesheet"
-          href="{{asset('Admin-backend/plugins/datatables-responsive/css/responsive.bootstrap4.min.css')}}">
-    <link rel="stylesheet" href="{{asset('Admin-backend/plugins/datatables-buttons/css/buttons.bootstrap4.min.css')}}">
-
+    @push('datatable')
+        <link rel="stylesheet"
+              href="{{asset('Admin-backend/plugins/datatables-bs4/css/dataTables.bootstrap4.min.css')}}">
+        <link rel="stylesheet"
+              href="{{asset('Admin-backend/plugins/datatables-responsive/css/responsive.bootstrap4.min.css')}}">
+        <link rel="stylesheet"
+              href="{{asset('Admin-backend/plugins/datatables-buttons/css/buttons.bootstrap4.min.css')}}">
+    @endpush
 @endsection
 
 
