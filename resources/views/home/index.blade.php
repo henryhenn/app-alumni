@@ -2,8 +2,9 @@
 
 @section('title')
     Home
+@endsection
 
-    @section('hero')
+@section('hero')
     <div class="container-xxl bg-primary hero-header">
         <div class="container">
             <div class="row g-5 align-items-center">
@@ -17,11 +18,13 @@
                         </div>
                     @endif
                     <h1 class="text-white mb-4 animated zoomIn">Selamat datang di aplikasi Alumni</h1>
-                    <p class="text-white pb-3 animated zoomIn">Tempor rebum no at dolore lorem clita rebum rebum ipsum rebum
+                    <p class="text-white pb-3 animated zoomIn">Tempor rebum no at dolore lorem clita rebum rebum ipsum
+                        rebum
                         stet dolor sed justo kasd. Ut dolor sed magna dolor sea diam. Sit diam sit justo amet ipsum vero
                         ipsum clita lorem</p>
                     <a href="#komunitas"
-                        class="btn btn-outline-light rounded-pill border-2 py-3 px-5 animated slideInRight">Learn More</a>
+                       class="btn btn-outline-light rounded-pill border-2 py-3 px-5 animated slideInRight">Learn
+                        More</a>
                 </div>
                 <div class="col-lg-6 text-center text-lg-start">
                     <img class="img-fluid animated zoomIn" src="{{ asset('img/hero.png') }}" alt="">
@@ -29,7 +32,7 @@
             </div>
         </div>
     </div>
->>>>>>> origin/daniel
+    >>>>>>> origin/daniel
 @endsection
 
 @section('content')
@@ -80,7 +83,7 @@
                     <p class="text-white">Please Register here !</p>
                     <div class="position-relative w-100 mt-3">
                         <a href="{{ route('register') }}"
-                            class="btn btn-outline-light rounded-pill border-2 py-3 px-5 animated slideInRight">Register</a>
+                           class="btn btn-outline-light rounded-pill border-2 py-3 px-5 animated slideInRight">Register</a>
                     </div>
                 </div>
                 <div class="col-md-6 text-center mb-n5 d-none d-md-block">
@@ -98,7 +101,8 @@
                     <h2 class="mb-4">Kelebihan Aplikasi Alumni SMK Cinta Kasih Tzu Chi</h2>
                     <p>Aplikasi alumni milik SMK Cinta Kasih Tzu Chi ini memiliki berbagai macam kelebihan dan manfaat.
                         Siapa pun siswa dan guru SMK yang bergabung ke aplikasi alumni milik SMK Cinta Kasih Tzu Chi ini
-                        juga bisa mendapatkan berbagai macam informasi seputar SMK Cinta Kasih Tzu Chi dan informasi dari
+                        juga bisa mendapatkan berbagai macam informasi seputar SMK Cinta Kasih Tzu Chi dan informasi
+                        dari
                         para alumni yang sudah lulus.</p>
                     <a class="btn btn-primary rounded-pill py-3 px-5 mt-2" href="">Read More</a>
                 </div>
@@ -149,11 +153,11 @@
                             </div>
                             <span>Para anggota bisa melihat seluruh foto dan nama para alumni yang sudah lulus.</span>
                         </div>
-                        </div>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
     </div>
     <!-- Features End -->
 

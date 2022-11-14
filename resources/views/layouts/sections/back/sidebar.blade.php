@@ -7,9 +7,9 @@
     <div class="sidebar">
         <div class="user-panel mt-3 pb-3 mb-3 d-flex">
             <div class="image">
-                {{-- <img
+                 <img
                     src="{{auth()->user()->foto ? asset(auth()->user()->foto) : Avatar::create(auth()->user()->name)->toBase64()}}"
-                    class="img-circle elevation-2" alt="User Image"> --}}
+                    class="img-circle elevation-2" alt="User Image">
             </div>
             <div class="info">
                 <a href="{{route('my-profile.index')}}" class="d-block">{{auth()->user()->name}}</a>
