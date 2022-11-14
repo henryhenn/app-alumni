@@ -32,7 +32,6 @@
             </div>
         </div>
     </div>
-    >>>>>>> origin/daniel
 @endsection
 
 @section('content')
@@ -115,7 +114,8 @@
                                 </div>
                                 <h6 class="mb-0">Informasi Terbaru</h6>
                             </div>
-                            <span>Para aggota akan mendapatkan berbagai macam informasi seputar SMK Cinta Kasih Tzu Chi, seperti event dan lomba.</span>
+                            <span>Para aggota akan mendapatkan berbagai macam informasi seputar SMK Cinta Kasih Tzu Chi,
+                                seperti event dan lomba.</span>
                         </div>
                         <div class="col-sm-6 wow fadeIn" data-wow-delay="0.2s">
                             <div class="d-flex align-items-center mb-3">
@@ -124,7 +124,8 @@
                                 </div>
                                 <h6 class="mb-0">Informasi Lowongan Kerja</h6>
                             </div>
-                            <span>Para alumni bisa mendapatkan banyak informasi tentang berbagai macam lowongan pekerjaan.</span>
+                            <span>Para alumni bisa mendapatkan banyak informasi tentang berbagai macam lowongan
+                                pekerjaan.</span>
                         </div>
                         <div class="col-sm-6 wow fadeIn" data-wow-delay="0.3s">
                             <div class="d-flex align-items-center mb-3">
@@ -133,7 +134,8 @@
                                 </div>
                                 <h6 class="mb-0">Forum Chat</h6>
                             </div>
-                            <span>Seluruh siswa, guru, dan alumni SMK Cinta Kasih Tzu Chi dapat berkomunikasi di forum chat.</span>
+                            <span>Seluruh siswa, guru, dan alumni SMK Cinta Kasih Tzu Chi dapat berkomunikasi di forum
+                                chat.</span>
                         </div>
                         <div class="col-sm-6 wow fadeIn" data-wow-delay="0.4s">
                             <div class="d-flex align-items-center mb-3">

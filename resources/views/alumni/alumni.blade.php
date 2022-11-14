@@ -28,7 +28,7 @@
                             <tr>
                                 <td>{{$key+1}}</td>
                                 <td>{{ $user->name }}</td>
-                                <td><img src="{{ asset('storage/'. $user->foto) }}" class="img-fluid" alt=""></td>
+                                <td><img src="{{ asset('storage/'. $user->foto) }}" width="100px" class="img-fluid" alt=""></td>
                                 <td>{{ $user->no_telp }}</td>
                                 <td>{{ $user->email }}</td>
                                 <td>{{ $user->alamat }}</td>

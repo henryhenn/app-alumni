@@ -9,7 +9,7 @@
         <div class="navbar-nav ms-auto py-0">
             <a href="{{ route('home') }}"
                class="nav-item {{ !request()->routeIs('home') ? 'text-dark' : '' }} {{ request()->routeIs('home') ? 'active' : '' }} nav-link">Home</a>
-            <a href="" class="nav-item nav-link {{ !request()->routeIs('home') ? 'text-dark' : '' }}">Community</a>
+            <a href="{{ route('community') }}" class="nav-item nav-link {{ !request()->routeIs('home') ? 'text-dark' : '' }}">Community</a>
             <a href="{{ route('profile') }}"
                class="nav-item {{ !request()->routeIs('home') ? 'text-dark' : '' }} {{ request()->routeIs('profile.*') ? 'active' : '' }} nav-link">Profile</a>
             <a href="{{ route('alumni') }}"
