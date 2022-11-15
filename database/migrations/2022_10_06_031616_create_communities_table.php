@@ -15,8 +15,11 @@ return new class extends Migration
     {
         Schema::create('communities', function (Blueprint $table) {
             $table->uuid('id');
-            $table->foreignId('user_id');
+            $table->string('user_id');
+            $table->foreign('user_id')->references('id')->on('users');
+            $table->string('judul');
             $table->longText('pesan');
+            $table->string('foto');
             $table->timestamps();
         });
     }

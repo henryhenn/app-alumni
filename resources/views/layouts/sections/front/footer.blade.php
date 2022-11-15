@@ -24,7 +24,7 @@
             <div class="col-md-6 col-lg-3">
                 <h5 class="text-white mb-4">Quick Link</h5>
                 <a class="btn btn-link" href="{{route('home')}}">Home</a>
-                <a class="btn btn-link" href="{{route('community')}}">Community</a>
+                <a class="btn btn-link" href="{{route('communities')}}">Community</a>
                 <a class="btn btn-link" href="{{route('profile')}}">Profile</a>
                 <a class="btn btn-link" href="{{route('alumni')}}">Alumni</a>
                 @guest
@@ -34,7 +34,7 @@
             <div class="col-md-6 col-lg-3">
                 <h5 class="text-white mb-4">Popular Link</h5>
                 <a class="btn btn-link" href="{{route('home')}}">Home</a>
-                <a class="btn btn-link" href="{{route('community')}}">Community</a>
+                <a class="btn btn-link" href="{{route('communities')}}">Community</a>
             </div>
             <div class="col-md-6 col-lg-3">
                 <h5 class="text-white mb-4">Newsletter</h5>

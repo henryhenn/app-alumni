@@ -9,14 +9,8 @@
         <div class="container">
             <div class="row g-5 align-items-center">
                 <div class="col-lg-6 text-center text-lg-start">
-                    @if (session('message'))
-                        <div class="alert alert-danger alert-dismissible fade show" role="alert">
-                            {{ session('error') }}
-                            <button type="button" class="btn-close" data-dismiss="alert" aria-label="Close">
+                    @include('layouts.sections.alert')
 
-                            </button>
-                        </div>
-                    @endif
                     <h1 class="text-white mb-4 animated zoomIn">Selamat datang di aplikasi Alumni</h1>
                     <p class="text-white pb-3 animated zoomIn">Tempor rebum no at dolore lorem clita rebum rebum ipsum
                         rebum

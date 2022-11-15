@@ -9,7 +9,7 @@
             <div class="image">
                  <img
                     src="{{auth()->user()->foto ? asset(auth()->user()->foto) : Avatar::create(auth()->user()->name)->toBase64()}}"
-                    class="img-circle elevation-2" alt="User Image">
+                    class="img-fluid elevation-2" alt="User Image">
             </div>
             <div class="info">
                 <a href="{{route('my-profile.index')}}" class="d-block">{{auth()->user()->name}}</a>
@@ -43,6 +43,33 @@
                         </li>
                     </ul>
                 </li>
+                @role('User')
+                <li class="nav-item">
+                    <a href="#" class="nav-link {{request()->routeIs('my-communities') ? 'active' : ''}}">
+                        <i class="nav-icon fas fa-user-friends"></i>
+                        <p>
+                            Communities
+                            <i class="fas fa-angle-left right"></i>
+                        </p>
+                    </a>
+                    <ul class="nav nav-treeview">
+                        <li class="nav-item">
+                            <a href="{{route('my-communities')}}"
+                               class="nav-link {{request()->routeIs('my-communities') ? 'active' : ''}}">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>My Posts</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="{{route('communities.create')}}"
+                               class="nav-link {{request()->routeIs('communities.create') ? 'active' : ''}}">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>Create New Post</p>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                @endrole
                 @role('Super Admin')
                 <li class="nav-item {{request()->routeIs('admins.*') ? 'menu-open' : ''}}">
                     <a href="#" class="nav-link {{request()->routeIs('admins.*') ? 'active' : ''}}">
