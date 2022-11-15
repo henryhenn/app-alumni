@@ -23,14 +23,14 @@ Creator's Profilephp
                                         class="fab fa-facebook-f"></i></a>
                             <a class="btn btn-square text-primary bg-white m-1" href=""><i
                                         class="fab fa-twitter"></i></a>
-                            <a class="btn btn-square text-primary bg-white m-1" href=""><i
+                            <a class="btn btn-square text-primary bg-white m-1" href="https://www.instagram.com/_henryhenn/"><i
                                         class="fab fa-instagram"></i></a>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
                     <div class="team-item">
-                        <h5>Steven Widjaja</h5>
+                        <h5>Daniel</h5>
                         <p class="mb-4">Designation</p>
                         <img class="img-fluid rounded-circle w-100 mb-4" src="{{ asset('img/team-2.jpg') }}"
                              alt="">
@@ -39,14 +39,14 @@ Creator's Profilephp
                                         class="fab fa-facebook-f"></i></a>
                             <a class="btn btn-square text-primary bg-white m-1" href=""><i
                                         class="fab fa-twitter"></i></a>
-                            <a class="btn btn-square text-primary bg-white m-1" href=""><i
+                            <a class="btn btn-square text-primary bg-white m-1" href="https://www.instagram.com/daniellliu_/"><i
                                         class="fab fa-instagram"></i></a>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
                     <div class="team-item">
-                        <h5>Danniel</h5>
+                        <h5>Steven Widjaja</h5>
                         <p class="mb-4">Designation</p>
                         <img class="img-fluid rounded-circle w-100 mb-4" src="{{ asset('img/team-3.jpg') }}"
                              alt="">
@@ -55,7 +55,7 @@ Creator's Profilephp
                                         class="fab fa-facebook-f"></i></a>
                             <a class="btn btn-square text-primary bg-white m-1" href=""><i
                                         class="fab fa-twitter"></i></a>
-                            <a class="btn btn-square text-primary bg-white m-1" href=""><i
+                            <a class="btn btn-square text-primary bg-white m-1" href="https://www.instagram.com/_steven_widjaja_/"><i
                                         class="fab fa-instagram"></i></a>
                         </div>
                     </div>
@@ -64,7 +64,7 @@ Creator's Profilephp
                     <div class="team-item">
                         <h5>Devon Audric</h5>
                         <p class="mb-4">Designation</p>
-                        <img class="img-fluid rounded-circle w-100 mb-4" src="{{ asset('img/team-4.jpg') }}"
+                        <img class="img-fluid rounded-circle w-100 mb-4" src="{{ asset('img/team-4.png') }}"
                              alt="">
                         <div class="d-flex justify-content-center">
                             <a class="btn btn-square text-primary bg-white m-1" href=""><i
