@@ -9,7 +9,6 @@ class CommunityController extends Controller
 {
     public function index()
     {
-
     }
 
     public function store(Request $request)
@@ -43,5 +42,16 @@ class CommunityController extends Controller
             ->get();
 
         return view('community.my-posts', compact('posts'));
+    }
+
+    public function edit(Community $community)
+    {
+    }
+
+    public function destroy(Community $community)
+    {
+        $community->delete();
+
+        return redirect()->back()->with('message', 'Postingan berhasil dihapus!');
     }
 }

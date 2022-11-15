@@ -49,11 +49,15 @@ Route::middleware('auth')->group(function () {
     Route::controller(CommunityController::class)->group(function () {
         Route::get('communities', 'index')->name('communities');
 
+        Route::get('communities/{community:id}/edit', 'edit')->name('communities.edit');
+
         Route::get('communities/create', 'create')->name('communities.create');
 
         Route::post('communities', 'store')->name('communities.store');
 
         Route::get('communities/my-posts', 'usersCommunity')->name('my-communities');
+
+        Route::delete('communities/{community:id}', 'destroy')->name('communities.destroy');
     });
 });
 

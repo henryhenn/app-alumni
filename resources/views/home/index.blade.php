@@ -17,7 +17,7 @@
                         stet dolor sed justo kasd. Ut dolor sed magna dolor sea diam. Sit diam sit justo amet ipsum vero
                         ipsum clita lorem</p>
                     <a href="#komunitas"
-                       class="btn btn-outline-light rounded-pill border-2 py-3 px-5 animated slideInRight">Learn
+                        class="btn btn-outline-light rounded-pill border-2 py-3 px-5 animated slideInRight">Learn
                         More</a>
                 </div>
                 <div class="col-lg-6 text-center text-lg-start">
@@ -76,7 +76,7 @@
                     <p class="text-white">Please Register here !</p>
                     <div class="position-relative w-100 mt-3">
                         <a href="{{ route('register') }}"
-                           class="btn btn-outline-light rounded-pill border-2 py-3 px-5 animated slideInRight">Register</a>
+                            class="btn btn-outline-light rounded-pill border-2 py-3 px-5 animated slideInRight">Register</a>
                     </div>
                 </div>
                 <div class="col-md-6 text-center mb-n5 d-none d-md-block">
