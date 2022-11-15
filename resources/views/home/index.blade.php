@@ -2,26 +2,23 @@
 
 @section('title')
     Home
+@endsection
 
-    @section('hero')
+@section('hero')
     <div class="container-xxl bg-primary hero-header">
         <div class="container">
             <div class="row g-5 align-items-center">
                 <div class="col-lg-6 text-center text-lg-start">
-                    @if (session('message'))
-                        <div class="alert alert-danger alert-dismissible fade show" role="alert">
-                            {{ session('error') }}
-                            <button type="button" class="btn-close" data-dismiss="alert" aria-label="Close">
+                    @include('layouts.sections.alert')
 
-                            </button>
-                        </div>
-                    @endif
                     <h1 class="text-white mb-4 animated zoomIn">Selamat datang di aplikasi Alumni</h1>
-                    <p class="text-white pb-3 animated zoomIn">Tempor rebum no at dolore lorem clita rebum rebum ipsum rebum
+                    <p class="text-white pb-3 animated zoomIn">Tempor rebum no at dolore lorem clita rebum rebum ipsum
+                        rebum
                         stet dolor sed justo kasd. Ut dolor sed magna dolor sea diam. Sit diam sit justo amet ipsum vero
                         ipsum clita lorem</p>
                     <a href="#komunitas"
-                        class="btn btn-outline-light rounded-pill border-2 py-3 px-5 animated slideInRight">Learn More</a>
+                       class="btn btn-outline-light rounded-pill border-2 py-3 px-5 animated slideInRight">Learn
+                        More</a>
                 </div>
                 <div class="col-lg-6 text-center text-lg-start">
                     <img class="img-fluid animated zoomIn" src="{{ asset('img/hero.png') }}" alt="">
@@ -29,7 +26,6 @@
             </div>
         </div>
     </div>
->>>>>>> origin/daniel
 @endsection
 
 @section('content')
@@ -80,7 +76,7 @@
                     <p class="text-white">Please Register here !</p>
                     <div class="position-relative w-100 mt-3">
                         <a href="{{ route('register') }}"
-                            class="btn btn-outline-light rounded-pill border-2 py-3 px-5 animated slideInRight">Register</a>
+                           class="btn btn-outline-light rounded-pill border-2 py-3 px-5 animated slideInRight">Register</a>
                     </div>
                 </div>
                 <div class="col-md-6 text-center mb-n5 d-none d-md-block">
@@ -98,7 +94,8 @@
                     <h2 class="mb-4">Kelebihan Aplikasi Alumni SMK Cinta Kasih Tzu Chi</h2>
                     <p>Aplikasi alumni milik SMK Cinta Kasih Tzu Chi ini memiliki berbagai macam kelebihan dan manfaat.
                         Siapa pun siswa dan guru SMK yang bergabung ke aplikasi alumni milik SMK Cinta Kasih Tzu Chi ini
-                        juga bisa mendapatkan berbagai macam informasi seputar SMK Cinta Kasih Tzu Chi dan informasi dari
+                        juga bisa mendapatkan berbagai macam informasi seputar SMK Cinta Kasih Tzu Chi dan informasi
+                        dari
                         para alumni yang sudah lulus.</p>
                     <a class="btn btn-primary rounded-pill py-3 px-5 mt-2" href="">Read More</a>
                 </div>
@@ -111,7 +108,8 @@
                                 </div>
                                 <h6 class="mb-0">Informasi Terbaru</h6>
                             </div>
-                            <span>Para aggota akan mendapatkan berbagai macam informasi seputar SMK Cinta Kasih Tzu Chi, seperti event dan lomba.</span>
+                            <span>Para aggota akan mendapatkan berbagai macam informasi seputar SMK Cinta Kasih Tzu Chi,
+                                seperti event dan lomba.</span>
                         </div>
                         <div class="col-sm-6 wow fadeIn" data-wow-delay="0.2s">
                             <div class="d-flex align-items-center mb-3">
@@ -120,7 +118,8 @@
                                 </div>
                                 <h6 class="mb-0">Informasi Lowongan Kerja</h6>
                             </div>
-                            <span>Para alumni bisa mendapatkan banyak informasi tentang berbagai macam lowongan pekerjaan.</span>
+                            <span>Para alumni bisa mendapatkan banyak informasi tentang berbagai macam lowongan
+                                pekerjaan.</span>
                         </div>
                         <div class="col-sm-6 wow fadeIn" data-wow-delay="0.3s">
                             <div class="d-flex align-items-center mb-3">
@@ -129,7 +128,8 @@
                                 </div>
                                 <h6 class="mb-0">Forum Chat</h6>
                             </div>
-                            <span>Seluruh siswa, guru, dan alumni SMK Cinta Kasih Tzu Chi dapat berkomunikasi di forum chat.</span>
+                            <span>Seluruh siswa, guru, dan alumni SMK Cinta Kasih Tzu Chi dapat berkomunikasi di forum
+                                chat.</span>
                         </div>
                         <div class="col-sm-6 wow fadeIn" data-wow-delay="0.4s">
                             <div class="d-flex align-items-center mb-3">
@@ -149,11 +149,11 @@
                             </div>
                             <span>Para anggota bisa melihat seluruh foto dan nama para alumni yang sudah lulus.</span>
                         </div>
-                        </div>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
     </div>
     <!-- Features End -->
 

@@ -32,5 +32,20 @@ class DatabaseSeeder extends Seeder
         ]);
 
         $admin->assignRole('Super Admin');
+
+        $user = User::create([
+            'name' => 'Henry Salim',
+            'email' => 'henrysalim22@gmail.com',
+            'password' => bcrypt('password'),
+            'alamat' => 'DKI Jakarta',
+            'jenis_kelamin' => 'Laki-laki',
+            'tanggal_lahir' => date('2005-01-20'),
+            'tahun_lulus' => '2023',
+            'pekerjaan' => 'Web Programmer',
+            'hobby' => 'Mendengar musik',
+            'no_telp' => '081586043931',
+        ]);
+
+        $user->assignRole('User');
     }
 }

@@ -1,7 +1,6 @@
 <?php
 
 use App\Http\Controllers\AdminController;
-use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\MyProfileController;
 use Illuminate\Support\Facades\Route;
@@ -47,7 +46,15 @@ Route::middleware('auth')->group(function () {
 
     Route::resource('my-profile', MyProfileController::class)->only('index', 'edit', 'update');
 
-    Route::get('communities', [CommunityController::class, 'index'])->name('community');
+    Route::controller(CommunityController::class)->group(function () {
+        Route::get('communities', 'index')->name('communities');
+
+        Route::get('communities/create', 'create')->name('communities.create');
+
+        Route::post('communities', 'store')->name('communities.store');
+
+        Route::get('communities/my-posts', 'usersCommunity')->name('my-communities');
+    });
 });
 
 Route::group(['middleware' => ['role:Admin|Super Admin']], function () {
