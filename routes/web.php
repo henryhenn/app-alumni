@@ -53,6 +53,10 @@ Route::middleware('auth')->group(function () {
 
         Route::post('communities', 'store')->name('communities.store');
 
+        Route::get('communities/{post:id}/edit', 'edit')->name('communities.edit');
+
+        Route::put('communities/{post:id}', 'update')->name('communities.update');
+
         Route::get('communities/my-posts', 'usersCommunity')->name('my-communities');
     });
 });
