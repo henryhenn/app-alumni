@@ -34,7 +34,7 @@ class AuthController extends Controller
             if (auth()->user()->hasRole(['Admin', 'Super Admin'])) {
                 $request->session()->regenerate();
 
-                return redirect()->intended('dashboard')->with('message', 'Welcome back, ' . auth()->user()->name . '!');
+                return redirect()->intended('my-profile')->with('message', 'Welcome back, ' . auth()->user()->name . '!');
             }
         }
 

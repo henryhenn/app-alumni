@@ -42,6 +42,8 @@ Route::middleware('auth')->group(function () {
 
     Route::get('/alumni', [AlumniController::class, 'index'])->name('alumni');
 
+    Route::get('manage-alumni', [AlumniController::class, 'list'])->name('manage-alumni');
+
     Route::post('logout', [AuthController::class, 'logout'])->name('logout');
 
     Route::resource('my-profile', MyProfileController::class)->only('index', 'edit', 'update');

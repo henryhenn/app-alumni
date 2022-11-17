@@ -18,7 +18,7 @@ class DatabaseSeeder extends Seeder
     {
         $this->call(RoleSeeder::class);
 
-        $admin = User::create([
+        $superAdmin = User::create([
             'name' => 'Super Admin',
             'email' => 'admin@localhost.com',
             'password' => bcrypt('password'),
@@ -31,7 +31,22 @@ class DatabaseSeeder extends Seeder
             'no_telp' => '081586043931',
         ]);
 
-        $admin->assignRole('Super Admin');
+        $superAdmin->assignRole('Super Admin');
+
+        $admin = User::create([
+            'name' => 'Admin',
+            'email' => 'admin@gmail.com',
+            'password' => bcrypt('password'),
+            'alamat' => 'DKI Jakarta',
+            'jenis_kelamin' => 'Laki-laki',
+            'tanggal_lahir' => date('2005-01-20'),
+            'tahun_lulus' => '2023',
+            'pekerjaan' => 'Web Programmer',
+            'hobby' => 'Mendengar musik',
+            'no_telp' => '081586043931',
+        ]);
+
+        $admin->assignRole('Admin');
 
         $user = User::create([
             'name' => 'Henry Salim',

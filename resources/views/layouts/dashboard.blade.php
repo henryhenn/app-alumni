@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Alumni App | @yield('title')</title>
+    <title>Alumni App | @yield('title')</title>
 
     <!-- Google Font: Source Sans Pro -->
     <link rel="stylesheet"
@@ -44,7 +44,7 @@
         <div class="content">
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col-lg-10">
+                    <div class="col-lg-12">
                         @yield('content')
                     </div>
                 </div>
@@ -75,6 +75,45 @@
 <script src="{{asset('Admin-backend/plugins/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
 <!-- AdminLTE -->
 <script src="{{asset('Admin-backend/dist/js/adminlte.js')}}"></script>
+
+<link rel="stylesheet"
+      href="{{asset('Admin-backend/plugins/datatables-bs4/css/dataTables.bootstrap4.min.css')}}">
+<link rel="stylesheet"
+      href="{{asset('Admin-backend/plugins/datatables-responsive/css/responsive.bootstrap4.min.css')}}">
+<link rel="stylesheet"
+      href="{{asset('Admin-backend/plugins/datatables-buttons/css/buttons.bootstrap4.min.css')}}">
+
+<script src="{{asset('Admin-backend/plugins/datatables/jquery.dataTables.min.js')}}"></script>
+<script src="{{asset('Admin-backend/plugins/datatables-bs4/js/dataTables.bootstrap4.min.js')}}"></script>
+<script src="{{asset('Admin-backend/plugins/datatables-responsive/js/dataTables.responsive.min.js')}}"></script>
+<script src="{{asset('Admin-backend/plugins/datatables-responsive/js/responsive.bootstrap4.min.js')}}"></script>
+<script src="{{asset('Admin-backend/plugins/datatables-buttons/js/dataTables.buttons.min.js')}}"></script>
+<script src="{{asset('Admin-backend/plugins/datatables-buttons/js/buttons.bootstrap4.min.js')}}"></script>
+
+<script src="{{asset('Admin-backend/plugins/jszip/jszip.min.js')}}"></script>
+<script src="{{asset('Admin-backend/plugins/pdfmake/pdfmake.min.js')}}"></script>
+<script src="{{asset('Admin-backend/plugins/pdfmake/vfs_fonts.js')}}"></script>
+<script src="{{asset('Admin-backend/plugins/datatables-buttons/js/buttons.html5.min.js')}}"></script>
+<script src="{{asset('Admin-backend/plugins/datatables-buttons/js/buttons.print.min.js')}}"></script>
+<script src="{{asset('Admin-backend/plugins/datatables-buttons/js/buttons.colVis.min.js')}}"></script>
+
+<script>
+    $(function () {
+        $("#example1").DataTable({
+            "responsive": true, "lengthChange": false, "autoWidth": false,
+            "buttons": ["copy", "csv", "excel", "pdf", "print", "colvis"]
+        }).buttons().container().appendTo('#example1_wrapper .col-md-6:eq(0)');
+        $('#example2').DataTable({
+            "paging": true,
+            "lengthChange": false,
+            "searching": false,
+            "ordering": true,
+            "info": true,
+            "autoWidth": false,
+            "responsive": true,
+        });
+    });
+</script>
 
 </body>
 </html>

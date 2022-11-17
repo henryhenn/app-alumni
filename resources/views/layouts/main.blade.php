@@ -68,7 +68,12 @@
 <script src="{{ asset('lib/owlcarousel/owl.carousel.min.js') }}"></script>
 <script src="{{ asset('js/main.js') }}"></script>
 
-@stack('datatable')
+<link rel="stylesheet"
+      href="{{asset('Admin-backend/plugins/datatables-bs4/css/dataTables.bootstrap4.min.css')}}">
+<link rel="stylesheet"
+      href="{{asset('Admin-backend/plugins/datatables-responsive/css/responsive.bootstrap4.min.css')}}">
+<link rel="stylesheet"
+      href="{{asset('Admin-backend/plugins/datatables-buttons/css/buttons.bootstrap4.min.css')}}">
 
 <!-- jQuery -->
 <script src="{{asset('Admin-backend/plugins/jquery/jquery.min.js')}}"></script>
@@ -81,12 +86,7 @@
 <script src="{{asset('Admin-backend/plugins/datatables-responsive/js/responsive.bootstrap4.min.js')}}"></script>
 <script src="{{asset('Admin-backend/plugins/datatables-buttons/js/dataTables.buttons.min.js')}}"></script>
 <script src="{{asset('Admin-backend/plugins/datatables-buttons/js/buttons.bootstrap4.min.js')}}"></script>
-<script src="{{asset('Admin-backend/plugins/jszip/jszip.min.js')}}"></script>
-<script src="{{asset('Admin-backend/plugins/pdfmake/pdfmake.min.js')}}"></script>
-<script src="{{asset('Admin-backend/plugins/pdfmake/vfs_fonts.js')}}"></script>
-<script src="{{asset('Admin-backend/plugins/datatables-buttons/js/buttons.html5.min.js')}}"></script>
-<script src="{{asset('Admin-backend/plugins/datatables-buttons/js/buttons.print.min.js')}}"></script>
-<script src="{{asset('Admin-backend/plugins/datatables-buttons/js/buttons.colVis.min.js')}}"></script>
+
 <!-- AdminLTE App -->
 <script src="{{asset('Admin-backend/dist/js/adminlte.min.js')}}"></script>
 <!-- AdminLTE for demo purposes -->

@@ -7,7 +7,7 @@
     <div class="sidebar">
         <div class="user-panel mt-3 pb-3 mb-3 d-flex">
             <div class="image">
-                 <img
+                <img
                     src="{{auth()->user()->foto ? asset(auth()->user()->foto) : Avatar::create(auth()->user()->name)->toBase64()}}"
                     class="img-fluid elevation-2" alt="User Image">
             </div>
@@ -99,7 +99,11 @@
                 @endrole
                 @role('Admin')
                 <li class="nav-item">
-                    <a href="" class="nav-link">List Data Alumni</a>
+                    <a href="{{route('manage-alumni')}}"
+                       class="nav-link {{request()->routeIs('manage-alumni') ? 'active' : ''}}">
+                        <i class="fas fa-users nav-icon"></i>
+                        <p>Manage Alumni</p>
+                    </a>
                 </li>
                 @endrole
                 <li class="nav-item">

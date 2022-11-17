@@ -8,6 +8,12 @@ use Illuminate\Http\Request;
 
 class AlumniController extends Controller
 {
+
+    public function __construct()
+    {
+        $this->middleware('role:Admin')->except('index');
+    }
+
     /**
      * Display a listing of the resource.
      *
@@ -18,5 +24,12 @@ class AlumniController extends Controller
         $users = User::role('User')->orderBy('name')->get();
 
         return view('alumni.alumni', compact('users'));
+    }
+
+    public function list(): View
+    {
+        $users = User::role("User")->orderBy('name')->get();
+
+        return view('alumni.manage-alumni', compact('users'));
     }
 }
